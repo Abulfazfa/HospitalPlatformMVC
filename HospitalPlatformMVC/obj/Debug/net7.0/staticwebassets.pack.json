@@ -1,0 +1,441 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\HospitalPlatformMVC.bundle.scp.css",
+      "PackagePath": "staticwebassets\\HospitalPlatformMVC.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\css\\maps\\style.css.map",
+      "PackagePath": "staticwebassets\\css\\maps\\style.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\about\\05.png",
+      "PackagePath": "staticwebassets\\images\\about\\05.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\about\\1.png",
+      "PackagePath": "staticwebassets\\images\\about\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\about\\2.png",
+      "PackagePath": "staticwebassets\\images\\about\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\about\\3.png",
+      "PackagePath": "staticwebassets\\images\\about\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\about\\4.png",
+      "PackagePath": "staticwebassets\\images\\about\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\about\\5.png",
+      "PackagePath": "staticwebassets\\images\\about\\5.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\about\\6.png",
+      "PackagePath": "staticwebassets\\images\\about\\6.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\about\\about-1.jpg",
+      "PackagePath": "staticwebassets\\images\\about\\about-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\about\\about-2.jpg",
+      "PackagePath": "staticwebassets\\images\\about\\about-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\about\\about-3.jpg",
+      "PackagePath": "staticwebassets\\images\\about\\about-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\about\\about-4.jpg",
+      "PackagePath": "staticwebassets\\images\\about\\about-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\about\\img-1.jpg",
+      "PackagePath": "staticwebassets\\images\\about\\img-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\about\\img-2.jpg",
+      "PackagePath": "staticwebassets\\images\\about\\img-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\about\\img-3.jpg",
+      "PackagePath": "staticwebassets\\images\\about\\img-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\about\\sign.png",
+      "PackagePath": "staticwebassets\\images\\about\\sign.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\bg\\22.jpg",
+      "PackagePath": "staticwebassets\\images\\bg\\22.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\bg\\banner.jpg",
+      "PackagePath": "staticwebassets\\images\\bg\\banner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\bg\\bg-2.jpg",
+      "PackagePath": "staticwebassets\\images\\bg\\bg-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\bg\\bg-4.jpg",
+      "PackagePath": "staticwebassets\\images\\bg\\bg-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\bg\\slider-bg-1.jpg",
+      "PackagePath": "staticwebassets\\images\\bg\\slider-bg-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\blog\\blog-1.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\blog-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\blog\\blog-2.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\blog-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\blog\\blog-4.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\blog-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\blog\\blog-6.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\blog-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\blog\\blog-7.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\blog-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\blog\\blog-8.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\blog-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\blog\\testimonial1.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\testimonial1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\blog\\testimonial2.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\testimonial2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\service\\bg-1.jpg",
+      "PackagePath": "staticwebassets\\images\\service\\bg-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\service\\service-1.jpg",
+      "PackagePath": "staticwebassets\\images\\service\\service-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\service\\service-2.jpg",
+      "PackagePath": "staticwebassets\\images\\service\\service-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\service\\service-3.jpg",
+      "PackagePath": "staticwebassets\\images\\service\\service-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\service\\service-4.jpg",
+      "PackagePath": "staticwebassets\\images\\service\\service-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\service\\service-6.jpg",
+      "PackagePath": "staticwebassets\\images\\service\\service-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\service\\service-8.jpg",
+      "PackagePath": "staticwebassets\\images\\service\\service-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\team\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\team\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\team\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\team\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\team\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\team\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\team\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\team\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\team\\test-thumb1.jpg",
+      "PackagePath": "staticwebassets\\images\\team\\test-thumb1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\team\\test-thumb2.jpg",
+      "PackagePath": "staticwebassets\\images\\team\\test-thumb2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\team\\test-thumb3.jpg",
+      "PackagePath": "staticwebassets\\images\\team\\test-thumb3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\images\\team\\test-thumb4.jpg",
+      "PackagePath": "staticwebassets\\images\\team\\test-thumb4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\js\\contact.js",
+      "PackagePath": "staticwebassets\\js\\contact.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\plugins\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\plugins\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\plugins\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\plugins\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\plugins\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\plugins\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\plugins\\bootstrap\\js\\popper.js",
+      "PackagePath": "staticwebassets\\plugins\\bootstrap\\js\\popper.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\plugins\\counterup\\jquery.counterup.min.js",
+      "PackagePath": "staticwebassets\\plugins\\counterup\\jquery.counterup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\plugins\\counterup\\jquery.easing.js",
+      "PackagePath": "staticwebassets\\plugins\\counterup\\jquery.easing.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\plugins\\counterup\\jquery.waypoints.min.js",
+      "PackagePath": "staticwebassets\\plugins\\counterup\\jquery.waypoints.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\plugins\\google-map\\map.js",
+      "PackagePath": "staticwebassets\\plugins\\google-map\\map.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\plugins\\icofont\\demo.html",
+      "PackagePath": "staticwebassets\\plugins\\icofont\\demo.html"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\plugins\\icofont\\fonts\\icofont.eot",
+      "PackagePath": "staticwebassets\\plugins\\icofont\\fonts\\icofont.eot"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\plugins\\icofont\\fonts\\icofont.ttf",
+      "PackagePath": "staticwebassets\\plugins\\icofont\\fonts\\icofont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\plugins\\icofont\\fonts\\icofont.woff",
+      "PackagePath": "staticwebassets\\plugins\\icofont\\fonts\\icofont.woff"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\plugins\\icofont\\fonts\\icofont.woff2",
+      "PackagePath": "staticwebassets\\plugins\\icofont\\fonts\\icofont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\plugins\\icofont\\icofont.css",
+      "PackagePath": "staticwebassets\\plugins\\icofont\\icofont.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\plugins\\icofont\\icofont.min.css",
+      "PackagePath": "staticwebassets\\plugins\\icofont\\icofont.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\plugins\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\plugins\\jquery\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\plugins\\shuffle\\shuffle.min.js",
+      "PackagePath": "staticwebassets\\plugins\\shuffle\\shuffle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\plugins\\slick-carousel\\slick\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\plugins\\slick-carousel\\slick\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\plugins\\slick-carousel\\slick\\config.rb",
+      "PackagePath": "staticwebassets\\plugins\\slick-carousel\\slick\\config.rb"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\plugins\\slick-carousel\\slick\\fonts\\slick.eot",
+      "PackagePath": "staticwebassets\\plugins\\slick-carousel\\slick\\fonts\\slick.eot"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\plugins\\slick-carousel\\slick\\fonts\\slick.svg",
+      "PackagePath": "staticwebassets\\plugins\\slick-carousel\\slick\\fonts\\slick.svg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\plugins\\slick-carousel\\slick\\fonts\\slick.ttf",
+      "PackagePath": "staticwebassets\\plugins\\slick-carousel\\slick\\fonts\\slick.ttf"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\plugins\\slick-carousel\\slick\\fonts\\slick.woff",
+      "PackagePath": "staticwebassets\\plugins\\slick-carousel\\slick\\fonts\\slick.woff"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\plugins\\slick-carousel\\slick\\slick-theme.css",
+      "PackagePath": "staticwebassets\\plugins\\slick-carousel\\slick\\slick-theme.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\plugins\\slick-carousel\\slick\\slick-theme.less",
+      "PackagePath": "staticwebassets\\plugins\\slick-carousel\\slick\\slick-theme.less"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\plugins\\slick-carousel\\slick\\slick-theme.scss",
+      "PackagePath": "staticwebassets\\plugins\\slick-carousel\\slick\\slick-theme.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\plugins\\slick-carousel\\slick\\slick.css",
+      "PackagePath": "staticwebassets\\plugins\\slick-carousel\\slick\\slick.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\plugins\\slick-carousel\\slick\\slick.js",
+      "PackagePath": "staticwebassets\\plugins\\slick-carousel\\slick\\slick.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\plugins\\slick-carousel\\slick\\slick.less",
+      "PackagePath": "staticwebassets\\plugins\\slick-carousel\\slick\\slick.less"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\plugins\\slick-carousel\\slick\\slick.min.js",
+      "PackagePath": "staticwebassets\\plugins\\slick-carousel\\slick\\slick.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\plugins\\slick-carousel\\slick\\slick.scss",
+      "PackagePath": "staticwebassets\\plugins\\slick-carousel\\slick\\slick.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\scss\\_color.scss",
+      "PackagePath": "staticwebassets\\scss\\_color.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\scss\\_common.scss",
+      "PackagePath": "staticwebassets\\scss\\_common.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\scss\\_media-query.scss",
+      "PackagePath": "staticwebassets\\scss\\_media-query.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\scss\\_typography.scss",
+      "PackagePath": "staticwebassets\\scss\\_typography.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\scss\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\scss\\style.scss",
+      "PackagePath": "staticwebassets\\scss\\style.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\scss\\templates\\_about.scss",
+      "PackagePath": "staticwebassets\\scss\\templates\\_about.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\scss\\templates\\_backgrounds.scss",
+      "PackagePath": "staticwebassets\\scss\\templates\\_backgrounds.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\scss\\templates\\_blog-sidebar.scss",
+      "PackagePath": "staticwebassets\\scss\\templates\\_blog-sidebar.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\scss\\templates\\_blog.scss",
+      "PackagePath": "staticwebassets\\scss\\templates\\_blog.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\scss\\templates\\_contact.scss",
+      "PackagePath": "staticwebassets\\scss\\templates\\_contact.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\scss\\templates\\_counter.scss",
+      "PackagePath": "staticwebassets\\scss\\templates\\_counter.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\scss\\templates\\_cta.scss",
+      "PackagePath": "staticwebassets\\scss\\templates\\_cta.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\scss\\templates\\_department.scss",
+      "PackagePath": "staticwebassets\\scss\\templates\\_department.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\scss\\templates\\_feature.scss",
+      "PackagePath": "staticwebassets\\scss\\templates\\_feature.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\scss\\templates\\_footer.scss",
+      "PackagePath": "staticwebassets\\scss\\templates\\_footer.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\scss\\templates\\_header.scss",
+      "PackagePath": "staticwebassets\\scss\\templates\\_header.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\scss\\templates\\_navigation.scss",
+      "PackagePath": "staticwebassets\\scss\\templates\\_navigation.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\scss\\templates\\_portfolio.scss",
+      "PackagePath": "staticwebassets\\scss\\templates\\_portfolio.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\scss\\templates\\_review.scss",
+      "PackagePath": "staticwebassets\\scss\\templates\\_review.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\scss\\templates\\_service.scss",
+      "PackagePath": "staticwebassets\\scss\\templates\\_service.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\scss\\templates\\_single-post.scss",
+      "PackagePath": "staticwebassets\\scss\\templates\\_single-post.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\scss\\templates\\_slider.scss",
+      "PackagePath": "staticwebassets\\scss\\templates\\_slider.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\wwwroot\\scss\\templates\\_team.scss",
+      "PackagePath": "staticwebassets\\scss\\templates\\_team.scss"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.HospitalPlatformMVC.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.HospitalPlatformMVC.props",
+      "PackagePath": "build\\HospitalPlatformMVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.HospitalPlatformMVC.props",
+      "PackagePath": "buildMultiTargeting\\HospitalPlatformMVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.HospitalPlatformMVC.props",
+      "PackagePath": "buildTransitive\\HospitalPlatformMVC.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
