@@ -1,7 +1,18 @@
+using HospitalPlatformMVC.Service.IService;
+using HospitalPlatformMVC.Service;
+using HospitalPlatformMVC.Utility;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddHttpContextAccessor();
+
+SD.HospitalAPIBase = builder.Configuration["ServiceUrls:HospitalAPI"];
+builder.Services.AddScoped<ITokenProvider, TokenProvider>();
+builder.Services.AddScoped<IBaseService, BaseService>();
+builder.Services.AddScoped<IDoctorService, DoctorService>();
+
 
 var app = builder.Build();
 
