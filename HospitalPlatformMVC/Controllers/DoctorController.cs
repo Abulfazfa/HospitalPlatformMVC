@@ -28,7 +28,7 @@ namespace HospitalPlatformMVC.Controllers
                 TempData["error"] = response?.Message;
             }
 
-            return View(list);
+            return Json(list);
         }
 
         public async Task<IActionResult> CouponCreate()

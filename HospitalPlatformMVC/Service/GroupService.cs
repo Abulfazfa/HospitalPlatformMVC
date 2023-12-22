@@ -1,6 +1,8 @@
-﻿namespace HospitalPlatformMVC.Service
+﻿using HospitalPlatformMVC.Service.IService;
+
+namespace HospitalPlatformMVC.Service
 {
-    public class GroupService
+    public class GroupService : IGroupService
     {
     }
 }
