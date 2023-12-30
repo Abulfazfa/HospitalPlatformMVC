@@ -1,4 +1,5 @@
 ﻿using HospitalPlatformMVC.Models;
+using HospitalPlatformMVC.Service;
 using HospitalPlatformMVC.Service.IService;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -28,15 +29,16 @@ namespace HospitalPlatformMVC.Controllers
                 TempData["error"] = response?.Message;
             }
 
-            return Json(list);
+            return View(list);
         }
 
-        public async Task<IActionResult> CouponCreate()
-        {
-            return View();
-        }
+		public async Task<IActionResult> Detail(int id)
+		{
+			DepartmentDto department = GetDepartment(id);
+			return View(department);
+		}
 
-        [HttpPost]
+		[HttpPost]
         public async Task<IActionResult> DepartmentCreate(DepartmentDto departmentDto)
         {
             if (ModelState.IsValid)
@@ -55,5 +57,12 @@ namespace HospitalPlatformMVC.Controllers
             }
             return View(departmentDto);
         }
-    }
+
+
+		private DepartmentDto GetDepartment(int id)
+		{
+			ResponseDto response = _groupService.GetDepartmentByIdAsync(id).Result;
+			return JsonConvert.DeserializeObject<DepartmentDto>(Convert.ToString(response.Result));
+		}
+	}
 }
