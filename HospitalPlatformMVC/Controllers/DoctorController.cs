@@ -47,10 +47,23 @@ namespace HospitalPlatformMVC.Controllers
             ResponseDto doctorsList = _doctorService.GetAllDoctorsAsync().Result;
             ViewBag.Doctors = JsonConvert.DeserializeObject<List<DoctorDto>>(Convert.ToString(doctorsList.Result));
             ViewBag.Categories = JsonConvert.DeserializeObject<List<DepartmentDto>>(Convert.ToString(categoriesList.Result));
-            return View(doctorDto);
+            return View();
 		}
 
-		public async Task<IActionResult> DoctorCreate()
+        public async Task<IActionResult> AddAppointment(Appointment appointment)
+        {
+            DoctorDto doctorDto = GetDoctor(appointment.DoctorId);
+            List<Appointment> appointments = new List<Appointment>();
+            appointments.Add(appointment);
+            doctorDto.Appointments = appointments;
+            //ResponseDto categoriesList = await _groupService.GetAllDepartmentsAsync();
+            //ResponseDto doctorsList = _doctorService.GetAllDoctorsAsync().Result;
+            //ViewBag.Doctors = JsonConvert.DeserializeObject<List<DoctorDto>>(Convert.ToString(doctorsList.Result));
+            //ViewBag.Categories = JsonConvert.DeserializeObject<List<DepartmentDto>>(Convert.ToString(categoriesList.Result));
+            return NoContent();
+        }
+
+        public async Task<IActionResult> DoctorCreate()
         {
             return View();
         }
@@ -80,6 +93,51 @@ namespace HospitalPlatformMVC.Controllers
             ResponseDto response = _doctorService.GetDoctorByIdAsync(id).Result;
             return JsonConvert.DeserializeObject<DoctorDto>(Convert.ToString(response.Result));
         }
+
+
+        [HttpGet]
+        public IActionResult GetDoctorsByDepartment(string depName)
+        {
+            ResponseDto response = _doctorService.GetAllDoctorsAsync().Result;
+            List<DoctorDto> allDoctors = JsonConvert.DeserializeObject<List<DoctorDto>>(Convert.ToString(response.Result));
+
+            // Filter doctors based on department name
+            List<DoctorDto> doctorsInDepartment = allDoctors.Where(d => d.Branch == depName).ToList();
+            return Json(doctorsInDepartment);
+        }
+
+        [HttpGet]
+        public IActionResult GetAvailableTimes(int doctorId, DateTime? date)
+        {
+            try
+            {
+                // Call a service method to get available times based on department, doctor, and date
+                DoctorDto doctor = GetDoctor(doctorId);
+                string[] times = { "8:00 - 9:00", "9:00 - 10:00", "10:00 - 11:00", "11:00 - 12:00", "12:00 - 13:00" };
+                List<string> updatesTimes = new List<string>();
+
+                if (doctor.Appointments != null)
+                {
+                    foreach (var item in doctor.Appointments.Where(a => a.ConsultingDate == date.ToString()))
+                    {
+                        if (!times.Contains(item.Time))
+                        {
+                            updatesTimes.Add(item.Time);
+                        }
+                    }
+                }
+                else
+                {
+                    updatesTimes = times.ToList();
+                }
+                return Json(updatesTimes);
+            } 
+            catch (Exception ex)
+            {
+                return BadRequest("An error occurred while retrieving available times.");
+            }
+        }
+
 
     }
 }
