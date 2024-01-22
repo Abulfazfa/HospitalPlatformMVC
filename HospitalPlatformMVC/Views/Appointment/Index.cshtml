@@ -1,4 +1,4 @@
-﻿@model Appointment
+﻿@model AppointmentDto
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -41,7 +41,7 @@
                 <div class="appoinment-wrap mt-5 mt-lg-0 pl-lg-5">
                     <h2 class="mb-2 title-color">Book an appoinment</h2>
                     <p class="mb-4">Mollitia dicta commodi est recusandae iste, natus eum asperiores corrupti qui velit . Iste dolorum atque similique praesentium soluta.</p>
-                    <form id="appointment-form" asp-controller="Doctor" asp-action="AddAppointment" method="post">
+                    <form id="appointment-form" asp-controller="Appointment" asp-action="AddAppointment" method="post">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group">
@@ -57,7 +57,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <select class="form-control" id="doctorSelect" asp-for="DoctorId">                                 
+                                    <select class="form-control" id="doctorSelect" asp-for="DoctorId">
                                         <option>Select Doctors</option>
                                     </select>
                                 </div>

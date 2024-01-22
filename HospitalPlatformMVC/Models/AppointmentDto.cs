@@ -1,6 +1,6 @@
 ﻿namespace HospitalPlatformMVC.Models
 {
-    public class Appointment
+    public class AppointmentDto
     {
         public int Id { get; set; }
         public int DoctorId { get; set; }

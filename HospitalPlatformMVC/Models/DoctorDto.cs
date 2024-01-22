@@ -10,6 +10,6 @@
         public string PhoneNumber { get; set; }
         public string WorkingOfficeName { get; set; }
         public double ConsultingFee { get; set; }
-        public List<Appointment> Appointments { get; set; }
+        public List<AppointmentDto> Appointments { get; set; }
     }
 }

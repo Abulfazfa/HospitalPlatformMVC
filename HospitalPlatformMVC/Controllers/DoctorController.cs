@@ -41,27 +41,7 @@ namespace HospitalPlatformMVC.Controllers
             return View(doctor);
         }
 
-		public async Task<IActionResult> Appointment(DoctorDto doctorDto)
-		{
-            ResponseDto categoriesList = await _groupService.GetAllDepartmentsAsync();
-            ResponseDto doctorsList = _doctorService.GetAllDoctorsAsync().Result;
-            ViewBag.Doctors = JsonConvert.DeserializeObject<List<DoctorDto>>(Convert.ToString(doctorsList.Result));
-            ViewBag.Categories = JsonConvert.DeserializeObject<List<DepartmentDto>>(Convert.ToString(categoriesList.Result));
-            return View();
-		}
-
-        public async Task<IActionResult> AddAppointment(Appointment appointment)
-        {
-            DoctorDto doctorDto = GetDoctor(appointment.DoctorId);
-            List<Appointment> appointments = new List<Appointment>();
-            appointments.Add(appointment);
-            doctorDto.Appointments = appointments;
-            //ResponseDto categoriesList = await _groupService.GetAllDepartmentsAsync();
-            //ResponseDto doctorsList = _doctorService.GetAllDoctorsAsync().Result;
-            //ViewBag.Doctors = JsonConvert.DeserializeObject<List<DoctorDto>>(Convert.ToString(doctorsList.Result));
-            //ViewBag.Categories = JsonConvert.DeserializeObject<List<DepartmentDto>>(Convert.ToString(categoriesList.Result));
-            return NoContent();
-        }
+        
 
         public async Task<IActionResult> DoctorCreate()
         {
