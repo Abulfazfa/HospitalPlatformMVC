@@ -32,8 +32,6 @@ namespace HospitalPlatformMVC.Controllers
             {
                 DoctorDto doctorDto = GetDoctor(appointment.DoctorId);
                 List<AppointmentDto> appointments = new List<AppointmentDto>();
-                appointments.Add(appointment);
-                doctorDto.Appointments = appointments;
                 _appointmentService.CreateAppointmentsAsync(appointment);
                 return NoContent();
             }

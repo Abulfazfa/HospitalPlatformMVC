@@ -96,7 +96,7 @@ namespace HospitalPlatformMVC.Controllers
                 string[] times = { "8:00 - 9:00", "9:00 - 10:00", "10:00 - 11:00", "11:00 - 12:00", "12:00 - 13:00" };
                 List<string> updatesTimes = new List<string>();
 
-                if (doctor.Appointments != null)
+                if (doctor.Appointments.Count > 0)
                 {
                     foreach (var item in doctor.Appointments.Where(a => a.ConsultingDate == date.ToString()))
                     {
