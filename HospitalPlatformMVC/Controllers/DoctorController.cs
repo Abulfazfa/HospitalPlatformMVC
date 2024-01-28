@@ -70,8 +70,8 @@ namespace HospitalPlatformMVC.Controllers
 
         private DoctorDto GetDoctor(int id)
         {
-            ResponseDto response = _doctorService.GetDoctorByIdAsync(id).Result;
-            return JsonConvert.DeserializeObject<DoctorDto>(Convert.ToString(response.Result));
+            ResponseDto response = _doctorService.GetAllDoctorsAsync().Result;
+            return JsonConvert.DeserializeObject<List<DoctorDto>>(Convert.ToString(response.Result)).FirstOrDefault(d => d.Id == id);
         }
 
 
@@ -95,20 +95,16 @@ namespace HospitalPlatformMVC.Controllers
                 DoctorDto doctor = GetDoctor(doctorId);
                 string[] times = { "8:00 - 9:00", "9:00 - 10:00", "10:00 - 11:00", "11:00 - 12:00", "12:00 - 13:00" };
                 List<string> updatesTimes = new List<string>();
-
+                updatesTimes = times.ToList();
                 if (doctor.Appointments.Count > 0)
                 {
-                    foreach (var item in doctor.Appointments.Where(a => a.ConsultingDate == date.ToString()))
+                    foreach (var item in doctor.Appointments.Where(a => a.ConsultingDate == date.Value.ToString("yyyy-MM-dd")))
                     {
-                        if (!times.Contains(item.Time))
+                        if (times.Contains(item.Time))
                         {
-                            updatesTimes.Add(item.Time);
+                            updatesTimes.Remove(item.Time);
                         }
                     }
-                }
-                else
-                {
-                    updatesTimes = times.ToList();
                 }
                 return Json(updatesTimes);
             } 

@@ -26,6 +26,11 @@ namespace HospitalPlatformMVC.Controllers
             ViewBag.Categories = JsonConvert.DeserializeObject<List<DepartmentDto>>(Convert.ToString(categoriesList.Result));
             return View();
         }
+        public async Task<IActionResult> MyAppointments()
+        {
+            // After user registration she/he can open
+            return View();
+        }
         public async Task<IActionResult> AddAppointment(AppointmentDto appointment)
         {
             try
