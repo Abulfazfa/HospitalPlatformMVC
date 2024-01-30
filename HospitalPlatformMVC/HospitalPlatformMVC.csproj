@@ -11,8 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\DoctorPanel\Data\" />
     <Folder Include="Areas\DoctorPanel\Models\" />
+    <Folder Include="wwwroot\panel\" />
   </ItemGroup>
 
 </Project>
