@@ -45,7 +45,7 @@
 						<div class="content">
 							<h4 class="mt-4 mb-2 title-color">@item.Name</h4>
 							<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-							<a asp-action="detail" class="read-more">Learn More  <i class="icofont-simple-right ml-2"></i></a>
+							<a asp-action="detail" asp-route-name="@item.Name" class="read-more">Learn More  <i class="icofont-simple-right ml-2"></i></a>
 						</div>
 					</div>
 				</div>

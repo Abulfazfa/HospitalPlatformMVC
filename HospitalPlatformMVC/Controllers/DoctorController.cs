@@ -41,7 +41,6 @@ namespace HospitalPlatformMVC.Controllers
             return View(doctor);
         }
 
-        
 
         public async Task<IActionResult> DoctorCreate()
         {

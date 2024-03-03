@@ -47,10 +47,18 @@
                                 <div class="form-group">
                                     <select class="form-control" id="departmentSelect">
 
-                                        <option>Choose Department</option>
-                                        @foreach (var category in ViewBag.Categories as List<DepartmentDto>)
+                                          
+                                        @if (!(ViewBag.Categories is string))
                                         {
-                                            <option>@category.Name</option>
+                                            <option>Choose Department</option>
+                                            @foreach (var category in ViewBag.Categories as List<DepartmentDto>)
+                                            {
+                                                <option>@category.Name</option>
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <option>@ViewBag.Categories</option>
                                         }
                                     </select>
                                 </div>
@@ -58,8 +66,18 @@
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <select class="form-control" id="doctorSelect" asp-for="DoctorId">
-                                        <option>Select Doctors</option>
+                                        
+                                        @if (ViewBag.Categories is string)
+                                        {
+                                            <option value="@ViewBag.Doctors.Id">@ViewBag.Doctors.FullName</option>
+                                        }
+                                        else
+                                        {
+                                            <option>Select Doctors</option>
+                                        }
+
                                     </select>
+                                    
                                 </div>
                             </div>
 

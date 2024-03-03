@@ -9,12 +9,14 @@ namespace HospitalPlatformMVC.Controllers
     public class DepartmentController : Controller
     {
         private readonly IGroupService _groupService;
-        public DepartmentController(IGroupService groupService)
-        {
-            _groupService = groupService;
-        }
+		private readonly IDoctorService _doctorService;
+		public DepartmentController(IGroupService groupService, IDoctorService doctorService)
+		{
+			_groupService = groupService;
+			_doctorService = doctorService;
+		}
 
-        public async Task<IActionResult> Index()
+		public async Task<IActionResult> Index()
         {
             List<DepartmentDto>? list = new();
 
@@ -32,9 +34,12 @@ namespace HospitalPlatformMVC.Controllers
             return View(list);
         }
 
-		public async Task<IActionResult> Detail(int id)
+		public async Task<IActionResult> Detail(string name)
 		{
-			DepartmentDto department = GetDepartment(id);
+			DepartmentDto department = GetDepartment(name);
+			ResponseDto doctorsList = _doctorService.GetAllDoctorsAsync().Result;
+			var docs = JsonConvert.DeserializeObject<List<DoctorDto>>(Convert.ToString(doctorsList.Result)).Where(d => d.Branch == department.Name);
+            ViewBag.Doctors = docs;
 			return View(department);
 		}
 
@@ -59,10 +64,10 @@ namespace HospitalPlatformMVC.Controllers
         }
 
 
-		private DepartmentDto GetDepartment(int id)
+		private DepartmentDto GetDepartment(string name)
 		{
-			ResponseDto response = _groupService.GetDepartmentByIdAsync(id).Result;
-			return JsonConvert.DeserializeObject<DepartmentDto>(Convert.ToString(response.Result));
+			ResponseDto response = _groupService.GetAllDepartmentsAsync().Result;
+			return JsonConvert.DeserializeObject<List<DepartmentDto>>(Convert.ToString(response.Result)).FirstOrDefault(d => d.Name == name);
 		}
 	}
 }

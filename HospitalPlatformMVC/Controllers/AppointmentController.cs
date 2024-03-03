@@ -18,14 +18,25 @@ namespace HospitalPlatformMVC.Controllers
             _appointmentService = appointmentService;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int doctorId)
         {
-            ResponseDto categoriesList = await _groupService.GetAllDepartmentsAsync();
-            ResponseDto doctorsList = _doctorService.GetAllDoctorsAsync().Result;
-            ViewBag.Doctors = JsonConvert.DeserializeObject<List<DoctorDto>>(Convert.ToString(doctorsList.Result));
-            ViewBag.Categories = JsonConvert.DeserializeObject<List<DepartmentDto>>(Convert.ToString(categoriesList.Result));
+			ResponseDto doctorsList = _doctorService.GetAllDoctorsAsync().Result;
+			if (doctorId == 0)
+            {
+				ResponseDto categoriesList = await _groupService.GetAllDepartmentsAsync();
+				
+				ViewBag.Doctors = JsonConvert.DeserializeObject<List<DoctorDto>>(Convert.ToString(doctorsList.Result));
+				ViewBag.Categories = JsonConvert.DeserializeObject<List<DepartmentDto>>(Convert.ToString(categoriesList.Result));
+			}
+            else
+            {
+                var doctorDto = JsonConvert.DeserializeObject<List<DoctorDto>>(Convert.ToString(doctorsList.Result)).FirstOrDefault(d => d.Id == doctorId);
+				ViewBag.Doctors = doctorDto;
+				ViewBag.Categories = doctorDto.Branch;
+			}
             return View();
         }
+
         public async Task<IActionResult> MyAppointments()
         {
             // After user registration she/he can open
@@ -52,5 +63,6 @@ namespace HospitalPlatformMVC.Controllers
             ResponseDto response = _doctorService.GetDoctorByIdAsync(id).Result;
             return JsonConvert.DeserializeObject<DoctorDto>(Convert.ToString(response.Result));
         }
+
     }
 }

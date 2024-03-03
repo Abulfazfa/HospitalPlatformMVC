@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using HospitalPlatformMVC.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace HospitalPlatformMVC.Controllers
 {
@@ -8,5 +9,5 @@ namespace HospitalPlatformMVC.Controllers
 		{
 			return View();
 		}
-	}
+    }
 }
