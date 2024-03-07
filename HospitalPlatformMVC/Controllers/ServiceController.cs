@@ -8,5 +8,6 @@ namespace HospitalPlatformMVC.Controllers
 		{
 			return View();
 		}
+		
 	}
 }

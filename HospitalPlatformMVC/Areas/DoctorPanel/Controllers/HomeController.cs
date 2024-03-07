@@ -8,17 +8,18 @@ namespace HospitalPlatformMVC.Areas.DoctorPanel.Controllers
     [Area("DoctorPanel")]
     public class HomeController : Controller
     {
-        private readonly IAccountService _accountService;
+        //private readonly IAccountService _accountService;
 
-        public HomeController(IAccountService accountService)
+        public HomeController(/*IAccountService accountService*/)
         {
-            _accountService = accountService;
+            //_accountService = accountService;
         }
 
         public IActionResult Login()
         {
             return View();
         }
+
 
         [HttpPost]
         [AutoValidateAntiforgeryToken]
@@ -32,7 +33,8 @@ namespace HospitalPlatformMVC.Areas.DoctorPanel.Controllers
             return View(loginVM);
         }
 
-        public IActionResult İndex()
+
+        public IActionResult Index()
         {
             return View();
         }
