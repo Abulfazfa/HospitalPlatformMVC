@@ -1,11 +1,36 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using HospitalPlatformMVC.Models;
+using HospitalPlatformMVC.Service.IService;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 
 namespace HospitalPlatformMVC.Areas.DoctorPanel.Controllers
 {
 	public class PasientController : Controller
 	{
+		private readonly UserManager<UserDto> _userManager;
+
+		public PasientController(UserManager<UserDto> userManager)
+		{
+			_userManager = userManager;
+		}
+
 		public IActionResult Index()
 		{
+			var users = _userManager.Users.ToList();
+			return View();
+		}
+		public IActionResult Create()
+		{
+			return View();
+		}
+
+		[HttpPost]
+		public IActionResult Create(UserDto userDto)
+		{
+			if (userDto != null) 
+			{
+				_userManager.CreateAsync(userDto, "12345");
+			}
 			return View();
 		}
 		public IActionResult Search()

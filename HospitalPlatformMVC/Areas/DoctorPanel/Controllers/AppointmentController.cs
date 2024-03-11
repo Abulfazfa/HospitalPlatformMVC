@@ -20,7 +20,7 @@ namespace HospitalPlatformMVC.Areas.DoctorPanel.Controllers
 		{
 			ResponseDto responseDto = _appointmentService.GetAllAppointmentsAsync().Result;
 			var appointmentList = JsonConvert.DeserializeObject<List<AppointmentDto>>(Convert.ToString(responseDto.Result));
-			return View(appointmentList.Where(d => d.DoctorId == docId));
+			return View(appointmentList.Where(d => d.DoctorId == docId).ToList());
 		}
 	}
 }
