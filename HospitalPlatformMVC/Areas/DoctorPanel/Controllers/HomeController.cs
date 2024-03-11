@@ -2,24 +2,24 @@
 using HospitalPlatformMVC.Models;
 using HospitalPlatformMVC.Service.IService;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace HospitalPlatformMVC.Areas.DoctorPanel.Controllers
 {
     [Area("DoctorPanel")]
     public class HomeController : Controller
     {
-        //private readonly IAccountService _accountService;
+        private readonly IDoctorService _doctorService;
 
-        public HomeController(/*IAccountService accountService*/)
+        public HomeController(IDoctorService doctorService)
         {
-            //_accountService = accountService;
+			_doctorService = doctorService;
         }
 
         public IActionResult Login()
         {
             return View();
         }
-
 
         [HttpPost]
         [AutoValidateAntiforgeryToken]
@@ -29,8 +29,10 @@ namespace HospitalPlatformMVC.Areas.DoctorPanel.Controllers
             {
                 return View(loginVM);
             }
+            int docId = int.Parse(loginVM.UsernameOrEmail);
+            
 
-            return View(loginVM);
+			return RedirectToAction("Index", "Appointment", new { docId = docId });
         }
 
 
