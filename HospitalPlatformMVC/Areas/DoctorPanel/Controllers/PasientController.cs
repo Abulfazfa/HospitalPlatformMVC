@@ -17,7 +17,7 @@ namespace HospitalPlatformMVC.Areas.DoctorPanel.Controllers
 		public IActionResult Index()
 		{
 			var users = _userManager.Users.ToList();
-			return View();
+			return View(users);
 		}
 		public IActionResult Create()
 		{
