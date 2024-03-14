@@ -5,13 +5,14 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HospitalPlatformMVC.Areas.DoctorPanel.Controllers
 {
+	[Area("DoctorPanel")]
 	public class PasientController : Controller
 	{
 		private readonly UserManager<UserDto> _userManager;
 
-		public PasientController(UserManager<UserDto> userManager)
+		public PasientController(/*UserManager<UserDto> userManager*/)
 		{
-			_userManager = userManager;
+			//_userManager = userManager;
 		}
 
 		public IActionResult Index()
@@ -27,11 +28,11 @@ namespace HospitalPlatformMVC.Areas.DoctorPanel.Controllers
 		[HttpPost]
 		public IActionResult Create(UserDto userDto)
 		{
-			if (userDto != null) 
+			if (userDto != null)
 			{
 				_userManager.CreateAsync(userDto, "12345");
 			}
-			return View();
+			return Content("User add successfully");
 		}
 		public IActionResult Search()
 		{
