@@ -20,13 +20,12 @@ namespace HospitalPlatformMVC.Controllers
 
         public async Task<IActionResult> Index(int doctorId)
         {
-			ResponseDto doctorsList = _doctorService.GetAllDoctorsAsync().Result;
 			if (doctorId == 0)
             {
 				ResponseDto categoriesList = await _groupService.GetAllDepartmentsAsync();
 				
-				ViewBag.Doctors = JsonConvert.DeserializeObject<List<DoctorDto>>(Convert.ToString(doctorsList.Result));
-				ViewBag.Categories = JsonConvert.DeserializeObject<List<DepartmentDto>>(Convert.ToString(categoriesList.Result));
+				ViewBag.Doctors = _doctorService.GetAllDoctorsAsync().Result;
+				ViewBag.Categories = _groupService.GetAllDepartmentsAsync().Result;
 			}
             else
             {

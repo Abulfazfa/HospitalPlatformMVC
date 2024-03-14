@@ -1,6 +1,7 @@
 ﻿using HospitalPlatformMVC.Models;
 using HospitalPlatformMVC.Service.IService;
 using HospitalPlatformMVC.Utility;
+using Newtonsoft.Json;
 
 namespace HospitalPlatformMVC.Service
 {
@@ -30,22 +31,24 @@ namespace HospitalPlatformMVC.Service
             });
         }
 
-        public async Task<ResponseDto?> GetAllAppointmentsAsync()
+        public async Task<List<AppointmentDto>?> GetAllAppointmentsAsync()
         {
-            return await _baseService.SendAsync(new RequestDto()
+            ResponseDto? response = await _baseService.SendAsync(new RequestDto()
             {
                 ApiType = SD.ApiType.GET,
                 Url = SD.HospitalAPIBase + "Appointment/get/"
             });
+            return JsonConvert.DeserializeObject<List<AppointmentDto>>(Convert.ToString(response.Result));
         }
 
-        public async Task<ResponseDto?> GetAppointmentByIdAsync(int id)
+        public async Task<AppointmentDto?> GetAppointmentByIdAsync(int id)
         {
-            return await _baseService.SendAsync(new RequestDto()
+            ResponseDto? response = await _baseService.SendAsync(new RequestDto()
             {
                 ApiType = SD.ApiType.GET,
                 Url = SD.HospitalAPIBase + "Appointment/get/" + id
             });
+            return JsonConvert.DeserializeObject<AppointmentDto?>(Convert.ToString(response.Result));
         }
 
         public async Task<ResponseDto?> UpdateAppointmentsAsync(AppointmentDto appointmentDto)

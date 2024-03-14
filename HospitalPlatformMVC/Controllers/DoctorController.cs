@@ -17,18 +17,7 @@ namespace HospitalPlatformMVC.Controllers
 
         public async Task<IActionResult> Index()
 		{
-            List<DoctorDto>? list = new();
-
-            ResponseDto? response = await _doctorService.GetAllDoctorsAsync();
-
-            if (response != null && response.IsSuccess)
-            {
-                list = JsonConvert.DeserializeObject<List<DoctorDto>>(Convert.ToString(response.Result));
-            }
-            else
-            {
-                TempData["error"] = response?.Message;
-            }
+            List<DoctorDto>? list = await _doctorService.GetAllDoctorsAsync();
 
             var groupDto = _groupService.GetAllDepartmentsAsync().Result;
             ViewBag.Categories = JsonConvert.DeserializeObject<List<DepartmentDto>>(Convert.ToString(groupDto.Result)); 
@@ -41,31 +30,6 @@ namespace HospitalPlatformMVC.Controllers
             return View(doctor);
         }
 
-
-        public async Task<IActionResult> DoctorCreate()
-        {
-            return View();
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> DoctorCreate(DoctorDto doctorDto)
-        {
-            if (ModelState.IsValid)
-            {
-                ResponseDto? response = await _doctorService.CreateDoctorsAsync(doctorDto);
-
-                if (response != null && response.IsSuccess)
-                {
-                    TempData["success"] = "Doctor created successfully";
-                    return RedirectToAction(nameof(Index));
-                }
-                else
-                {
-                    TempData["error"] = response?.Message;
-                }
-            }
-            return View(doctorDto);
-        }
 
         private DoctorDto GetDoctor(int id)
         {

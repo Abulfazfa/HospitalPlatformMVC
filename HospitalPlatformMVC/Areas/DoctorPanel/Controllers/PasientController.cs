@@ -10,9 +10,9 @@ namespace HospitalPlatformMVC.Areas.DoctorPanel.Controllers
 	{
 		private readonly UserManager<UserDto> _userManager;
 
-		public PasientController(/*UserManager<UserDto> userManager*/)
+		public PasientController(UserManager<UserDto> userManager)
 		{
-			//_userManager = userManager;
+			_userManager = userManager;
 		}
 
 		public IActionResult Index()
@@ -34,14 +34,13 @@ namespace HospitalPlatformMVC.Areas.DoctorPanel.Controllers
 			}
 			return Content("User add successfully");
 		}
-		public IActionResult Search()
+		public IActionResult Search(string search)
 		{
-			//var products = _productService.GetAll()
-		 //  .Where(p => p.Name.ToLower().Contains(search.ToLower()))
-		 //  .Take(3)
-		 //  .OrderByDescending(p => p.Id)
-		 //  .ToList();
-			return PartialView("_SearchPartial"/*, products*/);
+			var users = _userManager.Users.ToList()
+		   .Where(p => p.Name.ToLower().Contains(search.ToLower()))
+		   .Take(5)
+		   .ToList();
+			return PartialView("_SearchPartial", users);
 		}
 	}
 }

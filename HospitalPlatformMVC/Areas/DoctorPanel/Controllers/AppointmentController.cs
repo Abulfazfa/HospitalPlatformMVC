@@ -1,6 +1,7 @@
 ﻿using HospitalPlatformMVC.Models;
 using HospitalPlatformMVC.Service;
 using HospitalPlatformMVC.Service.IService;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
@@ -22,5 +23,19 @@ namespace HospitalPlatformMVC.Areas.DoctorPanel.Controllers
 			var appointmentList = JsonConvert.DeserializeObject<List<AppointmentDto>>(Convert.ToString(responseDto.Result));
 			return View(appointmentList.Where(d => d.DoctorId == docId).ToList());
 		}
-	}
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(AppointmentDto appointmentDto)
+        {
+            if (appointmentDto != null)
+            {
+                _appointmentService.CreateAppointmentsAsync(appointmentDto);
+            }
+            return Content("Appointment add successfully");
+        }
+    }
 }
