@@ -20,16 +20,7 @@ namespace HospitalPlatformMVC.Controllers
         {
             List<DepartmentDto>? list = new();
 
-            ResponseDto? response = await _groupService.GetAllDepartmentsAsync();
-
-            if (response != null && response.IsSuccess)
-            {
-                list = JsonConvert.DeserializeObject<List<DepartmentDto>>(Convert.ToString(response.Result));
-            }
-            else
-            {
-                TempData["error"] = response?.Message;
-            }
+            list = _groupService.GetAllDepartmentsAsync().Result;
 
             return View(list);
         }
@@ -37,8 +28,7 @@ namespace HospitalPlatformMVC.Controllers
 		public async Task<IActionResult> Detail(string name)
 		{
 			DepartmentDto department = GetDepartment(name);
-			ResponseDto doctorsList = _doctorService.GetAllDoctorsAsync().Result;
-			var docs = JsonConvert.DeserializeObject<List<DoctorDto>>(Convert.ToString(doctorsList.Result)).Where(d => d.Branch == department.Name);
+			var docs = _doctorService.GetAllDoctorsAsync().Result.Where(d => d.Branch == department.Name);
             ViewBag.Doctors = docs;
 			return View(department);
 		}
@@ -66,8 +56,7 @@ namespace HospitalPlatformMVC.Controllers
 
 		private DepartmentDto GetDepartment(string name)
 		{
-			ResponseDto response = _groupService.GetAllDepartmentsAsync().Result;
-			return JsonConvert.DeserializeObject<List<DepartmentDto>>(Convert.ToString(response.Result)).FirstOrDefault(d => d.Name == name);
+            return _groupService.GetAllDepartmentsAsync().Result.FirstOrDefault(d => d.Name == name);
 		}
 	}
 }

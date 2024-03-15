@@ -5,13 +5,16 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HospitalPlatformMVC.Areas.AdminPanel.Controllers
 {
+    [Area("AdminPanel")]
     public class DoctorController : Controller
     {
         private readonly IDoctorService _doctorService;
+        private readonly IGroupService _groupService;
 
-        public DoctorController(IDoctorService doctorService)
+        public DoctorController(IDoctorService doctorService, IGroupService groupService)
         {
             _doctorService = doctorService;
+            _groupService = groupService;
         }
 
         public IActionResult Index()
@@ -33,9 +36,9 @@ namespace HospitalPlatformMVC.Areas.AdminPanel.Controllers
         {
             if (ModelState.IsValid)
             {
-                ResponseDto? response = await _doctorService.CreateDoctorsAsync(doctorDto);
+                ResponseDto response = await _doctorService.CreateDoctorsAsync(doctorDto);
 
-                if (response != null && response.IsSuccess)
+                if (response != null && !response.IsSuccess)
                 {
                     TempData["success"] = "Doctor created successfully";
                     return RedirectToAction(nameof(Index));
@@ -49,29 +52,27 @@ namespace HospitalPlatformMVC.Areas.AdminPanel.Controllers
         }
         public IActionResult Delete(int id)
         {
-            if (_doctorService.DeleteProduct(id).Result)
+            if (!_doctorService.DeleteDoctorsAsync(id).Result.IsSuccess)
                 return RedirectToAction(nameof(Index));
             return BadRequest();
         }
         public IActionResult Update(int id)
         {
             ViewBag.Id = id;
-            var product = _doctorService.GetProductDetail(id);
-            if (product == null)
+            var doctor = _doctorService.GetDoctorByIdAsync(id);
+            if (doctor == null)
                 return NotFound();
 
-            var productVM = _doctorService.MapProductVMAndProduct(id);
-
-            ViewBag.Categories = _doctorService.GetCategorySelectList();
-            return View(productVM);
+            ViewBag.Categories = _groupService.GetAllDepartmentsAsync().Result;
+            return View(doctor);
         }
         [HttpPost]
-        public IActionResult Update(int id, ProductVM productVM)
+        public IActionResult Update(int id, DoctorDto doctor)
         {
             if (!ModelState.IsValid)
-                return RedirectToAction(nameof(Update), productVM);
+                return RedirectToAction(nameof(Update), doctor);
 
-            if (_doctorService.UpdateProduct(id, productVM))
+            if (!_doctorService.UpdateDoctorsAsync(doctor).Result.IsSuccess)
                 return RedirectToAction(nameof(Index));
             else
                 return NotFound();

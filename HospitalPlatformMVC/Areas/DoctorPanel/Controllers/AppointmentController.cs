@@ -19,8 +19,7 @@ namespace HospitalPlatformMVC.Areas.DoctorPanel.Controllers
 
 		public IActionResult Index(int docId)
 		{
-			ResponseDto responseDto = _appointmentService.GetAllAppointmentsAsync().Result;
-			var appointmentList = JsonConvert.DeserializeObject<List<AppointmentDto>>(Convert.ToString(responseDto.Result));
+			var appointmentList = _appointmentService.GetAllAppointmentsAsync().Result;
 			return View(appointmentList.Where(d => d.DoctorId == docId).ToList());
 		}
         public IActionResult Create()

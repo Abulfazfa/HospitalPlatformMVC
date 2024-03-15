@@ -22,14 +22,13 @@ namespace HospitalPlatformMVC.Controllers
         {
 			if (doctorId == 0)
             {
-				ResponseDto categoriesList = await _groupService.GetAllDepartmentsAsync();
 				
 				ViewBag.Doctors = _doctorService.GetAllDoctorsAsync().Result;
 				ViewBag.Categories = _groupService.GetAllDepartmentsAsync().Result;
 			}
             else
             {
-                var doctorDto = JsonConvert.DeserializeObject<List<DoctorDto>>(Convert.ToString(doctorsList.Result)).FirstOrDefault(d => d.Id == doctorId);
+                var doctorDto = _doctorService.GetDoctorByIdAsync(doctorId).Result;
 				ViewBag.Doctors = doctorDto;
 				ViewBag.Categories = doctorDto.Branch;
 			}
@@ -57,10 +56,9 @@ namespace HospitalPlatformMVC.Controllers
             }
         }
 
-        private DoctorDto GetDoctor(int id)
+        private DoctorDto? GetDoctor(int id)
         {
-            ResponseDto response = _doctorService.GetDoctorByIdAsync(id).Result;
-            return JsonConvert.DeserializeObject<DoctorDto>(Convert.ToString(response.Result));
+            return _doctorService.GetDoctorByIdAsync(id).Result;
         }
 
     }

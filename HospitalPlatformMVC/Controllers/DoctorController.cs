@@ -17,32 +17,29 @@ namespace HospitalPlatformMVC.Controllers
 
         public async Task<IActionResult> Index()
 		{
-            List<DoctorDto>? list = await _doctorService.GetAllDoctorsAsync();
+            List<DoctorDto>? list = _doctorService.GetAllDoctorsAsync().Result;
 
-            var groupDto = _groupService.GetAllDepartmentsAsync().Result;
-            ViewBag.Categories = JsonConvert.DeserializeObject<List<DepartmentDto>>(Convert.ToString(groupDto.Result)); 
+            ViewBag.Categories = _groupService.GetAllDepartmentsAsync().Result;
             return View(list);
         }
 
         public async Task<IActionResult> Detail(int id)
         {
-            DoctorDto doctor = GetDoctor(id);
+            DoctorDto? doctor = GetDoctor(id);
             return View(doctor);
         }
 
 
-        private DoctorDto GetDoctor(int id)
+        private DoctorDto? GetDoctor(int id)
         {
-            ResponseDto response = _doctorService.GetAllDoctorsAsync().Result;
-            return JsonConvert.DeserializeObject<List<DoctorDto>>(Convert.ToString(response.Result)).FirstOrDefault(d => d.Id == id);
+            return _doctorService.GetDoctorByIdAsync(id).Result;
         }
 
 
         [HttpGet]
         public IActionResult GetDoctorsByDepartment(string depName)
         {
-            ResponseDto response = _doctorService.GetAllDoctorsAsync().Result;
-            List<DoctorDto> allDoctors = JsonConvert.DeserializeObject<List<DoctorDto>>(Convert.ToString(response.Result));
+            List<DoctorDto> allDoctors = _doctorService.GetAllDoctorsAsync().Result;
 
             // Filter doctors based on department name
             List<DoctorDto> doctorsInDepartment = allDoctors.Where(d => d.Branch == depName).ToList();

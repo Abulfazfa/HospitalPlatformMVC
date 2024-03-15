@@ -2,6 +2,7 @@
 
 namespace HospitalPlatformMVC.Areas.AdminPanel.Controllers
 {
+    [Area("AdminPanel")]
     public class GroupController : Controller
     {
         public IActionResult Index()

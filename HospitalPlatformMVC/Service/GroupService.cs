@@ -15,21 +15,23 @@ namespace HospitalPlatformMVC.Service
 
         public async Task<ResponseDto?> CreateDepartmentsAsync(DepartmentDto departmentDto)
         {
-            return await _baseService.SendAsync(new RequestDto()
+            ResponseDto? response = await _baseService.SendAsync(new RequestDto()
             {
                 ApiType = SD.ApiType.POST,
                 Data = departmentDto,
                 Url = SD.HospitalAPIBase + "Group/post/"
             });
+            return response;
         }
 
         public async Task<ResponseDto?> DeleteDepartmentsAsync(int id)
         {
-            return await _baseService.SendAsync(new RequestDto()
+            ResponseDto? response = await _baseService.SendAsync(new RequestDto()
             {
                 ApiType = SD.ApiType.DELETE,
                 Url = SD.HospitalAPIBase + "Group/delete/" + id
             });
+            return response;
         }
 
         public async Task<List<DepartmentDto>?> GetAllDepartmentsAsync()
@@ -54,12 +56,13 @@ namespace HospitalPlatformMVC.Service
 
         public async Task<ResponseDto?> UpdateDepartmentsAsync(DepartmentDto departmentDto)
         {
-            return await _baseService.SendAsync(new RequestDto()
+            ResponseDto? response = await _baseService.SendAsync(new RequestDto()
             {
                 ApiType = SD.ApiType.PUT,
                 Data = departmentDto,
                 Url = SD.HospitalAPIBase + "Group/put/"
             });
+            return response;
         }
     }
 }
