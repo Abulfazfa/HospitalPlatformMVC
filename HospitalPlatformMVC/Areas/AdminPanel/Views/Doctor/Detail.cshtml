@@ -1,0 +1,33 @@
+﻿@model DoctorDto
+<div class="row">
+    <div class="col-md-6 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+
+                    <div class="form-group">
+                        <img src="~/assets/img/product/@Model.Image.ImgUrl" width="250" height="250" />
+                    </div>
+                <div class="form-group">
+                    <h2>@Model.FullName</h2>
+                </div>
+                <div class="form-group">
+                    <p>@Model.Branch</p>
+                </div>
+                <div class="form-group">
+                    <p>@Model.About</p>
+                </div>
+                <div class="form-group">
+                    <p>@Model.PhoneNumber</p>
+                </div>
+                <div class="form-group">
+                    <p>@Model.ConsultingFee</p>
+                </div>
+                <div class="form-group">
+                    <p>@Model.WorkingOfficeName</p>
+                </div>
+
+                <a class="btn btn-dark" asp-controller="product" asp-action="index">Back</a>
+            </div>
+        </div>
+    </div>
+</div>

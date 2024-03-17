@@ -11,5 +11,7 @@
         public string WorkingOfficeName { get; set; }
         public double ConsultingFee { get; set; }
         public List<AppointmentDto> Appointments { get; set; }
+        public DoctorImage? Image { get; set; }
+        public IFormFile? Photo { get; set; }
     }
 }

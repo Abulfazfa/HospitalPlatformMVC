@@ -28,7 +28,9 @@ namespace HospitalPlatformMVC.Areas.AdminPanel.Controllers
         }
         public async Task<IActionResult> DoctorCreate()
         {
-            return View();
+            ViewBag.Categories = _groupService.GetAllDepartmentsAsync().Result;
+
+			return View();
         }
 
         [HttpPost]
@@ -66,6 +68,7 @@ namespace HospitalPlatformMVC.Areas.AdminPanel.Controllers
             ViewBag.Categories = _groupService.GetAllDepartmentsAsync().Result;
             return View(doctor);
         }
+
         [HttpPost]
         public IActionResult Update(int id, DoctorDto doctor)
         {
