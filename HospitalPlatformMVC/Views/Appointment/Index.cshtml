@@ -1,4 +1,4 @@
-﻿@model AppointmentDto
+﻿@model Appointment
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -51,7 +51,7 @@
                                         @if (!(ViewBag.Categories is string))
                                         {
                                             <option>Choose Department</option>
-                                            @foreach (var category in ViewBag.Categories as List<DepartmentDto>)
+                                            @foreach (var category in ViewBag.Categories as List<Department>)
                                             {
                                                 <option>@category.Name</option>
                                             }

@@ -8,13 +8,11 @@ namespace HospitalPlatformMVC.Areas.AdminPanel.Controllers
     [Area("AdminPanel")]
     public class DoctorController : Controller
     {
-        private readonly IDoctorService _doctorService;
-        private readonly IGroupService _groupService;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public DoctorController(IDoctorService doctorService, IGroupService groupService)
+        public DoctorController(IUnitOfWork unitOfWork)
         {
-            _doctorService = doctorService;
-            _groupService = groupService;
+            _unitOfWork = unitOfWork;
         }
 
         public IActionResult Index()
@@ -23,22 +21,22 @@ namespace HospitalPlatformMVC.Areas.AdminPanel.Controllers
         }
         public IActionResult Detail(int id)
         {
-            var product = _doctorService.GetDoctorByIdAsync(id).Result;
+            var product = _unitOfWork.DoctorService.GetAllAsync().Result;
             return View(product);
         }
         public async Task<IActionResult> DoctorCreate()
         {
-            ViewBag.Categories = _groupService.GetAllDepartmentsAsync().Result;
+            ViewBag.Categories = _unitOfWork.GroupService.GetAllAsync().Result;
 
 			return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> DoctorCreate(DoctorDto doctorDto)
+        public async Task<IActionResult> DoctorCreate(Doctor doctorDto)
         {
             if (ModelState.IsValid)
             {
-                ResponseDto response = await _doctorService.CreateDoctorsAsync(doctorDto);
+                ResponseDto response = _unitOfWork.DoctorService.CreateAsync(doctorDto).Result;
 
                 if (response != null && !response.IsSuccess)
                 {
@@ -54,28 +52,28 @@ namespace HospitalPlatformMVC.Areas.AdminPanel.Controllers
         }
         public IActionResult Delete(int id)
         {
-            if (!_doctorService.DeleteDoctorsAsync(id).Result.IsSuccess)
+            if (!_unitOfWork.DoctorService.DeleteAsync(id).Result.IsSuccess)
                 return RedirectToAction(nameof(Index));
             return BadRequest();
         }
         public IActionResult Update(int id)
         {
             ViewBag.Id = id;
-            var doctor = _doctorService.GetDoctorByIdAsync(id);
+            var doctor = _unitOfWork.DoctorService.GetByIdAsync(id);
             if (doctor == null)
                 return NotFound();
 
-            ViewBag.Categories = _groupService.GetAllDepartmentsAsync().Result;
+            ViewBag.Categories = _unitOfWork.GroupService.GetAllAsync().Result;
             return View(doctor);
         }
 
         [HttpPost]
-        public IActionResult Update(int id, DoctorDto doctor)
+        public IActionResult Update(int id, Doctor doctor)
         {
             if (!ModelState.IsValid)
                 return RedirectToAction(nameof(Update), doctor);
 
-            if (!_doctorService.UpdateDoctorsAsync(doctor).Result.IsSuccess)
+            if (!_unitOfWork.DoctorService.UpdateAsync(doctor).Result.IsSuccess)
                 return RedirectToAction(nameof(Index));
             else
                 return NotFound();

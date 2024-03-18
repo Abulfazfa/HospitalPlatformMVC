@@ -11,12 +11,16 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddHttpClient();
 
 SD.HospitalAPIBase = builder.Configuration["ServiceUrls:HospitalAPI"];
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<ITokenProvider, TokenProvider>();
 //builder.Services.AddSingleton<IHttpClientFactory, HttpClientFactory>();
 builder.Services.AddScoped<IBaseService, BaseService>();
 builder.Services.AddScoped<IDoctorService, DoctorService >();
 builder.Services.AddScoped<IGroupService, GroupService>();
 builder.Services.AddScoped<IAppointmentService, AppointmentService>();
+builder.Services.AddScoped<IAccountService, AccountService>();
+builder.Services.AddScoped<ITestService, TestService>();
+builder.Services.AddScoped<IUserService, UserService>();
 
 
 var app = builder.Build();

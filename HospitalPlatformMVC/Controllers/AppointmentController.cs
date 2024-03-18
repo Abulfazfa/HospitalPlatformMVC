@@ -7,15 +7,12 @@ namespace HospitalPlatformMVC.Controllers
 {
     public class AppointmentController : Controller
     {
-
-        private readonly IDoctorService _doctorService;
-        private readonly IGroupService _groupService;
+        private readonly IUnitOfWork _unitOfWork;        
         private readonly IAppointmentService _appointmentService;
-        public AppointmentController(IDoctorService doctorService, IGroupService groupService, IAppointmentService appointmentService)
+        public AppointmentController(IAppointmentService appointmentService, IUnitOfWork unitOfWork)
         {
-            _doctorService = doctorService;
-            _groupService = groupService;
             _appointmentService = appointmentService;
+            _unitOfWork = unitOfWork;
         }
 
         public async Task<IActionResult> Index(int doctorId)
@@ -23,12 +20,12 @@ namespace HospitalPlatformMVC.Controllers
 			if (doctorId == 0)
             {
 				
-				ViewBag.Doctors = _doctorService.GetAllDoctorsAsync().Result;
-				ViewBag.Categories = _groupService.GetAllDepartmentsAsync().Result;
+				ViewBag.Doctors = _unitOfWork.DoctorService.GetAllAsync().Result;
+				ViewBag.Categories = _unitOfWork.GroupService.GetAllAsync().Result;
 			}
             else
             {
-                var doctorDto = _doctorService.GetDoctorByIdAsync(doctorId).Result;
+                var doctorDto = _unitOfWork.DoctorService.GetByIdAsync(doctorId).Result;
 				ViewBag.Doctors = doctorDto;
 				ViewBag.Categories = doctorDto.Branch;
 			}
@@ -40,12 +37,12 @@ namespace HospitalPlatformMVC.Controllers
             // After user registration she/he can open
             return View();
         }
-        public async Task<IActionResult> AddAppointment(AppointmentDto appointment)
+        public async Task<IActionResult> AddAppointment(Appointment appointment)
         {
             try
             {
-                DoctorDto doctorDto = GetDoctor(appointment.DoctorId);
-                List<AppointmentDto> appointments = new List<AppointmentDto>();
+                Doctor doctorDto = GetDoctor(appointment.DoctorId);
+                List<Appointment> appointments = new List<Appointment>();
                 _appointmentService.CreateAppointmentsAsync(appointment);
                 return NoContent();
             }
@@ -56,9 +53,9 @@ namespace HospitalPlatformMVC.Controllers
             }
         }
 
-        private DoctorDto? GetDoctor(int id)
+        private Doctor? GetDoctor(int id)
         {
-            return _doctorService.GetDoctorByIdAsync(id).Result;
+            return _unitOfWork.DoctorService.GetByIdAsync(id).Result;
         }
 
     }

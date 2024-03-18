@@ -12,7 +12,7 @@ namespace HospitalPlatformMVC.Service
         {
             _baseService = baseService;
         }
-        public async Task<ResponseDto?> CreateAppointmentsAsync(AppointmentDto appointmentDto)
+        public async Task<ResponseDto?> CreateAppointmentsAsync(Appointment appointmentDto)
         {
             ResponseDto? response = await _baseService.SendAsync(new RequestDto()
             {
@@ -33,27 +33,27 @@ namespace HospitalPlatformMVC.Service
             return response;
         }
 
-        public async Task<List<AppointmentDto>?> GetAllAppointmentsAsync()
+        public async Task<List<Appointment>?> GetAllAppointmentsAsync()
         {
             ResponseDto? response = await _baseService.SendAsync(new RequestDto()
             {
                 ApiType = SD.ApiType.GET,
                 Url = SD.HospitalAPIBase + "Appointment/get/"
             });
-            return JsonConvert.DeserializeObject<List<AppointmentDto>>(Convert.ToString(response.Result));
+            return JsonConvert.DeserializeObject<List<Appointment>>(Convert.ToString(response.Result));
         }
 
-        public async Task<AppointmentDto?> GetAppointmentByIdAsync(int id)
+        public async Task<Appointment?> GetAppointmentByIdAsync(int id)
         {
             ResponseDto? response = await _baseService.SendAsync(new RequestDto()
             {
                 ApiType = SD.ApiType.GET,
                 Url = SD.HospitalAPIBase + "Appointment/get/" + id
             });
-            return JsonConvert.DeserializeObject<AppointmentDto?>(Convert.ToString(response.Result));
+            return JsonConvert.DeserializeObject<Appointment?>(Convert.ToString(response.Result));
         }
 
-        public async Task<ResponseDto?> UpdateAppointmentsAsync(AppointmentDto appointmentDto)
+        public async Task<ResponseDto?> UpdateAppointmentsAsync(Appointment appointmentDto)
         {
             ResponseDto? response = await _baseService.SendAsync(new RequestDto()
             {

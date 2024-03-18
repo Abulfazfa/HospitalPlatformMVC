@@ -8,37 +8,36 @@ namespace HospitalPlatformMVC.Controllers
 {
     public class DepartmentController : Controller
     {
-        private readonly IGroupService _groupService;
-		private readonly IDoctorService _doctorService;
-		public DepartmentController(IGroupService groupService, IDoctorService doctorService)
-		{
-			_groupService = groupService;
-			_doctorService = doctorService;
-		}
+        private readonly IUnitOfWork _unitOfWork;
 
-		public async Task<IActionResult> Index()
+        public DepartmentController(IUnitOfWork unitOfWork)
         {
-            List<DepartmentDto>? list = new();
+            _unitOfWork = unitOfWork;
+        }
 
-            list = _groupService.GetAllDepartmentsAsync().Result;
+        public async Task<IActionResult> Index()
+        {
+            List<Department>? list = new();
+
+            list = _unitOfWork.GroupService.GetAllAsync().Result;
 
             return View(list);
         }
 
 		public async Task<IActionResult> Detail(string name)
 		{
-			DepartmentDto department = GetDepartment(name);
-			var docs = _doctorService.GetAllDoctorsAsync().Result.Where(d => d.Branch == department.Name);
+			Department department = GetDepartment(name);
+			var docs = _unitOfWork.DoctorService.GetAllAsync().Result.Where(d => d.Branch == department.Name);
             ViewBag.Doctors = docs;
 			return View(department);
 		}
 
 		[HttpPost]
-        public async Task<IActionResult> DepartmentCreate(DepartmentDto departmentDto)
+        public async Task<IActionResult> DepartmentCreate(Department departmentDto)
         {
             if (ModelState.IsValid)
             {
-                ResponseDto? response = await _groupService.CreateDepartmentsAsync(departmentDto);
+                ResponseDto? response = await _unitOfWork.GroupService.CreateAsync(departmentDto);
 
                 if (response != null && response.IsSuccess)
                 {
@@ -54,9 +53,9 @@ namespace HospitalPlatformMVC.Controllers
         }
 
 
-		private DepartmentDto GetDepartment(string name)
+		private Department GetDepartment(string name)
 		{
-            return _groupService.GetAllDepartmentsAsync().Result.FirstOrDefault(d => d.Name == name);
+            return _unitOfWork.GroupService.GetAllAsync().Result.FirstOrDefault(d => d.Name == name);
 		}
 	}
 }

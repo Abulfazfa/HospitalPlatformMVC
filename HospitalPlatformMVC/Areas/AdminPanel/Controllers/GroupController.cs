@@ -6,16 +6,16 @@ namespace HospitalPlatformMVC.Areas.AdminPanel.Controllers
     [Area("AdminPanel")]
     public class GroupController : Controller
     {
-        private readonly IGroupService _groupService;
+       private readonly IUnitOfWork _unitOfWork;
 
-        public GroupController(IGroupService groupService)
+        public GroupController(IUnitOfWork unitOfWork)
         {
-            _groupService = groupService;
+            _unitOfWork = unitOfWork;
         }
 
         public IActionResult Index()
         {
-            var groups = _groupService.GetAllDepartmentsAsync().Result;
+            var groups = _unitOfWork.GroupService.GetAllAsync().Result;
             return View(groups);
         }
         public IActionResult Create()

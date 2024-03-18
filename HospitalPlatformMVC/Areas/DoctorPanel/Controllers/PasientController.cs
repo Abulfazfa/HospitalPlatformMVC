@@ -9,16 +9,16 @@ namespace HospitalPlatformMVC.Areas.DoctorPanel.Controllers
 	[Area("DoctorPanel")]
 	public class PasientController : Controller
 	{
-		private readonly UserService _userService;
+		private readonly IUnitOfWork _unitOfWork;
 
-        public PasientController(UserService userService)
+        public PasientController(IUnitOfWork unitOfWork)
         {
-            _userService = userService;
+            _unitOfWork = unitOfWork;
         }
 
         public IActionResult Index()
 		{
-			var users = _userService.GetAllUsersAsync().Result;
+			var users = _unitOfWork.UserService.GetAllAsync().Result;
 			return View(users);
 		}
 		public IActionResult Create()
@@ -27,18 +27,18 @@ namespace HospitalPlatformMVC.Areas.DoctorPanel.Controllers
 		}
 
 		[HttpPost]
-		public IActionResult Create(UserDto userDto)
+		public IActionResult Create(User userDto)
 		{
 			if (userDto != null)
 			{
-				var result = _userService.CreateUsersAsync(userDto);
+				var result = _unitOfWork.UserService.CreateAsync(userDto);
                 return Content("User add successfully");
             }
             return Content("User add unsuccessfully");
         }
 		public IActionResult Search(string search)
 		{
-			var users = _userService.GetAllUsersAsync().Result
+			var users = _unitOfWork.UserService.GetAllAsync().Result
 		   .Where(p => p.Name.ToLower().Contains(search.ToLower()))
 		   .Take(5)
 		   .ToList();

@@ -7,42 +7,41 @@ namespace HospitalPlatformMVC.Controllers
 {
 	public class DoctorController : Controller
 	{
-        private readonly IDoctorService _doctorService;
-        private readonly IGroupService _groupService;
-        public DoctorController(IDoctorService doctorService, IGroupService groupService)
+        private readonly IUnitOfWork _unitOfWork;
+
+        public DoctorController(IUnitOfWork unitOfWork)
         {
-            _doctorService = doctorService;
-            _groupService = groupService;
+            _unitOfWork = unitOfWork;
         }
 
         public async Task<IActionResult> Index()
 		{
-            List<DoctorDto>? list = _doctorService.GetAllDoctorsAsync().Result;
+            List<Doctor>? list = _unitOfWork.DoctorService.GetAllAsync().Result;
 
-            ViewBag.Categories = _groupService.GetAllDepartmentsAsync().Result;
+            ViewBag.Categories = _unitOfWork.GroupService.GetAllAsync().Result;
             return View(list);
         }
 
         public async Task<IActionResult> Detail(int id)
         {
-            DoctorDto? doctor = GetDoctor(id);
+            Doctor? doctor = GetDoctor(id);
             return View(doctor);
         }
 
 
-        private DoctorDto? GetDoctor(int id)
+        private Doctor? GetDoctor(int id)
         {
-            return _doctorService.GetDoctorByIdAsync(id).Result;
+            return _unitOfWork.DoctorService.GetByIdAsync(id).Result;
         }
 
 
         [HttpGet]
         public IActionResult GetDoctorsByDepartment(string depName)
         {
-            List<DoctorDto> allDoctors = _doctorService.GetAllDoctorsAsync().Result;
+            List<Doctor> allDoctors = _unitOfWork.DoctorService.GetAllAsync().Result;
 
             // Filter doctors based on department name
-            List<DoctorDto> doctorsInDepartment = allDoctors.Where(d => d.Branch == depName).ToList();
+            List<Doctor> doctorsInDepartment = allDoctors.Where(d => d.Branch == depName).ToList();
             return Json(doctorsInDepartment);
         }
 
@@ -52,7 +51,7 @@ namespace HospitalPlatformMVC.Controllers
             try
             {
                 // Call a service method to get available times based on department, doctor, and date
-                DoctorDto doctor = GetDoctor(doctorId);
+                Doctor doctor = GetDoctor(doctorId);
                 string[] times = { "8:00 - 9:00", "9:00 - 10:00", "10:00 - 11:00", "11:00 - 12:00", "12:00 - 13:00" };
                 List<string> updatesTimes = new List<string>();
                 updatesTimes = times.ToList();

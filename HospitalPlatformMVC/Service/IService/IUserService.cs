@@ -2,7 +2,7 @@
 
 namespace HospitalPlatformMVC.Service.IService
 {
-    public interface IUserService : IGenericService<UserDto>
+    public interface IUserService : IGenericService<User>
     {
         
     }

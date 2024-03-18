@@ -28,7 +28,7 @@ namespace HospitalPlatformMVC.Areas.DoctorPanel.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(AppointmentDto appointmentDto)
+        public IActionResult Create(Appointment appointmentDto)
         {
             if (appointmentDto != null)
             {

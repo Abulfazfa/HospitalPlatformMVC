@@ -2,7 +2,7 @@
 
 namespace HospitalPlatformMVC.Service.IService
 {
-    public interface ITestService : IGenericService<TestDto>
+    public interface ITestService : IGenericService<Test>
     {
         
     }

@@ -2,7 +2,7 @@
 
 namespace HospitalPlatformMVC.Service.IService
 {
-    public interface IDoctorService : IGenericService<DoctorDto>
+    public interface IDoctorService : IGenericService<Doctor>
     {
         //Task<List<DoctorDto>?> GetAllDoctorsAsync();
         //Task<DoctorDto?> GetDoctorByIdAsync(int id);
