@@ -1,4 +1,5 @@
 ﻿using HospitalPlatformMVC.Models;
+using HospitalPlatformMVC.Service;
 using HospitalPlatformMVC.Service.IService;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -8,16 +9,16 @@ namespace HospitalPlatformMVC.Areas.DoctorPanel.Controllers
 	[Area("DoctorPanel")]
 	public class PasientController : Controller
 	{
-		private readonly UserManager<UserDto> _userManager;
+		private readonly UserService _userService;
 
-		public PasientController(UserManager<UserDto> userManager)
-		{
-			_userManager = userManager;
-		}
+        public PasientController(UserService userService)
+        {
+            _userService = userService;
+        }
 
-		public IActionResult Index()
+        public IActionResult Index()
 		{
-			var users = _userManager.Users.ToList();
+			var users = _userService.GetAllUsersAsync().Result;
 			return View(users);
 		}
 		public IActionResult Create()
@@ -30,13 +31,14 @@ namespace HospitalPlatformMVC.Areas.DoctorPanel.Controllers
 		{
 			if (userDto != null)
 			{
-				_userManager.CreateAsync(userDto, "12345");
-			}
-			return Content("User add successfully");
-		}
+				var result = _userService.CreateUsersAsync(userDto);
+                return Content("User add successfully");
+            }
+            return Content("User add unsuccessfully");
+        }
 		public IActionResult Search(string search)
 		{
-			var users = _userManager.Users.ToList()
+			var users = _userService.GetAllUsersAsync().Result
 		   .Where(p => p.Name.ToLower().Contains(search.ToLower()))
 		   .Take(5)
 		   .ToList();
