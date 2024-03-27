@@ -12,19 +12,43 @@ namespace HospitalPlatformMVC.Service
             _baseService = baseService;
         }
 
-        public Task<bool> AssignRole(string email, string roleName)
+        public async Task<ResponseDto> AssignRole(string email, string roleName)
         {
-            throw new NotImplementedException();
+            var roleAssignmentDto = new RoleAssignmentDto
+            {
+                Email = email,
+                RoleName = roleName
+            };
+
+            ResponseDto? response = await _baseService.SendAsync(new RequestDto()
+            {
+                ApiType = SD.ApiType.POST,
+                Data = roleAssignmentDto,
+                Url = SD.HospitalAPIBase + $"AssignRole/post/"
+            });
+            return response;
         }
 
-        public Task<LoginResponseDto> Login(LoginDto loginRequestDto)
+        public async Task<ResponseDto> Login(LoginDto loginRequestDto)
         {
-            throw new NotImplementedException();
+            ResponseDto? response = await _baseService.SendAsync(new RequestDto()
+            {
+                ApiType = SD.ApiType.POST,
+                Data = loginRequestDto,
+                Url = SD.HospitalAPIBase + $"Login/post/"
+            });
+            return response;
         }
 
-        public Task<string> Register(RegisterDto registrationRequestDto)
+        public async Task<ResponseDto> Register(RegisterDto registrationRequestDto)
         {
-            throw new NotImplementedException();
+            ResponseDto? response = await _baseService.SendAsync(new RequestDto()
+            {
+                ApiType = SD.ApiType.POST,
+                Data = registrationRequestDto,
+                Url = SD.HospitalAPIBase + $"Register/post/"
+            });
+            return response;
         }
     }
 }

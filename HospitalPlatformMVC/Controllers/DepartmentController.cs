@@ -17,7 +17,7 @@ namespace HospitalPlatformMVC.Controllers
 
         public async Task<IActionResult> Index()
         {
-            List<Department>? list = new();
+            List<Group>? list = new();
 
             list = _unitOfWork.GroupService.GetAllAsync().Result;
 
@@ -26,14 +26,14 @@ namespace HospitalPlatformMVC.Controllers
 
 		public async Task<IActionResult> Detail(string name)
 		{
-			Department department = GetDepartment(name);
+			Group department = GetDepartment(name);
 			var docs = _unitOfWork.DoctorService.GetAllAsync().Result.Where(d => d.Branch == department.Name);
             ViewBag.Doctors = docs;
 			return View(department);
 		}
 
 		[HttpPost]
-        public async Task<IActionResult> DepartmentCreate(Department departmentDto)
+        public async Task<IActionResult> DepartmentCreate(Group departmentDto)
         {
             if (ModelState.IsValid)
             {
@@ -53,7 +53,7 @@ namespace HospitalPlatformMVC.Controllers
         }
 
 
-		private Department GetDepartment(string name)
+		private Group GetDepartment(string name)
 		{
             return _unitOfWork.GroupService.GetAllAsync().Result.FirstOrDefault(d => d.Name == name);
 		}

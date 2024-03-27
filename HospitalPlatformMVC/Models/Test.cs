@@ -2,15 +2,18 @@
 {
     public class Test
     {
+        public int Id { get; set; }
         public string AnalysisName { get; set; }
         public double? TestPrice { get; set; }
         public string? RefDoctor { get; set; }
         public TestResult? TestResult { get; set; }
         public bool IsReady { get; set; } = false;
+        public string UserName { get; set; }
     }
 
     public class TestResult
     {
+        public int Id { get; set; }
         public List<TestNameAndResultEntry>? TestNameAndResultEntry { get; set; }
         public List<string>? TestImageUrl { get; set; }
         public string? TestConclusion { get; set; }

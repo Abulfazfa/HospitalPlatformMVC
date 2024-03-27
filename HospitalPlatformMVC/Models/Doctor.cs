@@ -13,5 +13,6 @@
         public List<Appointment> Appointments { get; set; }
         public DoctorImage? Image { get; set; }
         public IFormFile? Photo { get; set; }
+        public DateTime? CreateDate { get; set; }
     }
 }

@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 
 namespace HospitalPlatformMVC.Service
 {
-    public class GroupService : GenericService<Department>, IGroupService
+    public class GroupService : GenericService<Group>, IGroupService
     {
         public GroupService(IBaseService baseService) : base(baseService)
         {

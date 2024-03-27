@@ -51,7 +51,7 @@
                                         @if (!(ViewBag.Categories is string))
                                         {
                                             <option>Choose Department</option>
-                                            @foreach (var category in ViewBag.Categories as List<Department>)
+                                            @foreach (var category in ViewBag.Categories as List<Group>)
                                             {
                                                 <option>@category.Name</option>
                                             }

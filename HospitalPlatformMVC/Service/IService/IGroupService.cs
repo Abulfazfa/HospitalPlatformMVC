@@ -2,7 +2,7 @@
 
 namespace HospitalPlatformMVC.Service.IService
 {
-    public interface IGroupService : IGenericService<Department>
+    public interface IGroupService : IGenericService<Group>
     {
         //Task<ResponseDto?> CreateDepartmentsAsync(DepartmentDto departmentDto);
         //Task<ResponseDto?> DeleteDepartmentsAsync(int id);

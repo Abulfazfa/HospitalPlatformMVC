@@ -1,0 +1,42 @@
+﻿@model Test
+@{
+	Layout = "~/Areas/DoctorPanel/Views/Shared/_PanelLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-6 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Create Product</h4>
+                <form method="post" class="forms-sample" enctype="multipart/form-data" multiple>
+                    <div class="form-group">
+                        <label asp-for="UserName"></label>
+                        <input class="form-control" asp-for="UserName">
+                        <span asp-validation-for="UserName"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label asp-for="AnalysisName"></label>
+                        <input class="form-control" asp-for="AnalysisName">
+                        <span asp-validation-for="AnalysisName"></span>
+                    </div>
+
+                  @*   <div class="form-group">
+                        <select asp-for="AnalysisName" asp-items="@(ViewBag.Analysis)">
+                            <option>Please select one</option>
+                        </select>
+                    </div> *@
+
+                    <div class="form-group">
+                        <select asp-for="RefDoctor" asp-items="@(ViewBag.RefDoctor)">
+                            <option>Please select one</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                    <a class="btn btn-dark" asp-controller="product" asp-action="index">Back</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

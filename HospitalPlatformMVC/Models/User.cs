@@ -10,5 +10,6 @@
         public string Address { get; set; }
         public string City { get; set; }
         public string Gender { get; set; }
+        public List<Test> Tests { get; set; }
     }
 }

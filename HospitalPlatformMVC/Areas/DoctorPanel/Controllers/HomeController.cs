@@ -9,11 +9,11 @@ namespace HospitalPlatformMVC.Areas.DoctorPanel.Controllers
     [Area("DoctorPanel")]
     public class HomeController : Controller
     {
-        private readonly IDoctorService _doctorService;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public HomeController(IDoctorService doctorService)
+        public HomeController(IUnitOfWork unitOfWork)
         {
-			_doctorService = doctorService;
+            _unitOfWork = unitOfWork;
         }
 
         public IActionResult Login()
@@ -25,14 +25,15 @@ namespace HospitalPlatformMVC.Areas.DoctorPanel.Controllers
         [AutoValidateAntiforgeryToken]
         public async Task<IActionResult> Login(LoginDto loginVM)
         {
-            if (!ModelState.IsValid)
+            if (string.IsNullOrEmpty(loginVM.UsernameOrEmail))
             {
                 return View(loginVM);
             }
-            int docId = int.Parse(loginVM.UsernameOrEmail);
-            
+            var doctors = _unitOfWork.DoctorService.GetAllAsync().Result;
+            var doctor = doctors.FirstOrDefault(d => d.CreateDate?.ToString("MM/dd/yyyy HH:mm:ss") == loginVM.UsernameOrEmail);
 
-			return RedirectToAction("Index", "Appointment", new { docId = docId });
+            if (doctor is null) { return  View(loginVM); }
+            else { return RedirectToAction("Index", "Appointment", new { docId = doctor.Id }); }
         }
 
 

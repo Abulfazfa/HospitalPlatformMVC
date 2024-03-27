@@ -27,11 +27,11 @@ namespace HospitalPlatformMVC.Areas.DoctorPanel.Controllers
 		}
 
 		[HttpPost]
-		public IActionResult Create(User userDto)
+		public IActionResult Create(RegisterDto registrationRequestDto)
 		{
-			if (userDto != null)
+			if (ModelState.IsValid)
 			{
-				var result = _unitOfWork.UserService.CreateAsync(userDto);
+				var result = _unitOfWork.AccountService.Register(registrationRequestDto);
                 return Content("User add successfully");
             }
             return Content("User add unsuccessfully");
