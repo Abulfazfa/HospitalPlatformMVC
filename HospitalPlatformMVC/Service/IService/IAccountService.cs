@@ -7,5 +7,6 @@ namespace HospitalPlatformMVC.Service.IService
         Task<ResponseDto> Register(RegisterDto registrationRequestDto);
         Task<ResponseDto> Login(LoginDto loginRequestDto);
         Task<ResponseDto> AssignRole(string email, string roleName);
+        Task<List<User>> GetAllUsers();
     }
 }

@@ -18,9 +18,10 @@ namespace HospitalPlatformMVC.Areas.DoctorPanel.Controllers
 
         public IActionResult Index()
 		{
-			var users = _unitOfWork.UserService.GetAllAsync().Result;
+			var users = _unitOfWork.AccountService.GetAllUsers().Result;
 			return View(users);
 		}
+
 		public IActionResult Create()
 		{
 			return View();
@@ -36,6 +37,7 @@ namespace HospitalPlatformMVC.Areas.DoctorPanel.Controllers
             }
             return Content("User add unsuccessfully");
         }
+
 		public IActionResult Search(string search)
 		{
 			var users = _unitOfWork.UserService.GetAllAsync().Result

@@ -1,6 +1,7 @@
 ﻿using HospitalPlatformMVC.Models;
 using HospitalPlatformMVC.Service.IService;
 using HospitalPlatformMVC.Utility;
+using Newtonsoft.Json;
 
 namespace HospitalPlatformMVC.Service
 {
@@ -24,7 +25,7 @@ namespace HospitalPlatformMVC.Service
             {
                 ApiType = SD.ApiType.POST,
                 Data = roleAssignmentDto,
-                Url = SD.HospitalAPIBase + $"AssignRole/post/"
+                Url = SD.HospitalAPIBase + $"Account/AssignRole/"
             });
             return response;
         }
@@ -35,7 +36,7 @@ namespace HospitalPlatformMVC.Service
             {
                 ApiType = SD.ApiType.POST,
                 Data = loginRequestDto,
-                Url = SD.HospitalAPIBase + $"Login/post/"
+                Url = SD.HospitalAPIBase + $"Account/login/"
             });
             return response;
         }
@@ -46,9 +47,19 @@ namespace HospitalPlatformMVC.Service
             {
                 ApiType = SD.ApiType.POST,
                 Data = registrationRequestDto,
-                Url = SD.HospitalAPIBase + $"Register/post/"
+                Url = SD.HospitalAPIBase + $"Account/register/"
             });
             return response;
+        }
+
+        public async Task<List<User>> GetAllUsers()
+        {
+            ResponseDto? response = await _baseService.SendAsync(new RequestDto()
+            {
+                ApiType = SD.ApiType.GET,
+                Url = SD.HospitalAPIBase + $"Account/get/"
+            });
+            return JsonConvert.DeserializeObject<List<User>>(Convert.ToString(response.Result));
         }
     }
 }
