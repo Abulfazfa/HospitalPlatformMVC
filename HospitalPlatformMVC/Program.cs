@@ -2,6 +2,7 @@ using HospitalPlatformMVC.Service.IService;
 using HospitalPlatformMVC.Service;
 using HospitalPlatformMVC.Utility;
 using System.Net.Http;
+using SoundSystemShop.Profiles;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,6 +23,11 @@ builder.Services.AddScoped<IAccountService, AccountService>();
 builder.Services.AddScoped<ITestService, TestService>();
 builder.Services.AddScoped<IUserService, UserService>();
 
+
+builder.Services.AddAutoMapper(option =>
+{
+    option.AddProfile<MapProfile>();
+});
 
 var app = builder.Build();
 

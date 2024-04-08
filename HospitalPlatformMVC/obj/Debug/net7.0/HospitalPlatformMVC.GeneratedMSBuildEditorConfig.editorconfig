@@ -10,6 +10,8 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HospitalPlatformMVC
 build_property.RootNamespace = HospitalPlatformMVC
 build_property.ProjectDir = C:\Users\HP\Desktop\HospitalPlatformMVC\HospitalPlatformMVC\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
@@ -80,6 +82,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRG9jdG9yUGFuZWxcVmlld3NcUGFzaWVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/HP/Desktop/HospitalPlatformMVC/HospitalPlatformMVC/Areas/DoctorPanel/Views/Pasient/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRG9jdG9yUGFuZWxcVmlld3NcUGFzaWVudFxVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/HP/Desktop/HospitalPlatformMVC/HospitalPlatformMVC/Areas/DoctorPanel/Views/Shared/_PanelLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRG9jdG9yUGFuZWxcVmlld3NcU2hhcmVkXF9QYW5lbExheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -98,6 +104,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/HP/Desktop/HospitalPlatformMVC/HospitalPlatformMVC/Areas/DoctorPanel/Views/Test/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRG9jdG9yUGFuZWxcVmlld3NcVGVzdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/HospitalPlatformMVC/HospitalPlatformMVC/Areas/DoctorPanel/Views/Test/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRG9jdG9yUGFuZWxcVmlld3NcVGVzdFxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/HP/Desktop/HospitalPlatformMVC/HospitalPlatformMVC/Areas/DoctorPanel/Views/_ViewImports.cshtml]

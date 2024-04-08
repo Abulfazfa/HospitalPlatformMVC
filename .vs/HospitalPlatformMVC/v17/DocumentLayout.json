@@ -1,0 +1,100 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|c:\\users\\hp\\desktop\\hospitalplatformmvc\\hospitalplatformmvc\\areas\\doctorpanel\\views\\test\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|solutionrelative:hospitalplatformmvc\\areas\\doctorpanel\\views\\test\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|c:\\users\\hp\\desktop\\hospitalplatformmvc\\hospitalplatformmvc\\areas\\doctorpanel\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|solutionrelative:hospitalplatformmvc\\areas\\doctorpanel\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|c:\\users\\hp\\desktop\\hospitalplatformmvc\\hospitalplatformmvc\\areas\\doctorpanel\\controllers\\pasientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|solutionrelative:hospitalplatformmvc\\areas\\doctorpanel\\controllers\\pasientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|c:\\users\\hp\\desktop\\hospitalplatformmvc\\hospitalplatformmvc\\areas\\doctorpanel\\views\\test\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|solutionrelative:hospitalplatformmvc\\areas\\doctorpanel\\views\\test\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PasientController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\Areas\\DoctorPanel\\Controllers\\PasientController.cs",
+              "RelativeDocumentMoniker": "HospitalPlatformMVC\\Areas\\DoctorPanel\\Controllers\\PasientController.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\Areas\\DoctorPanel\\Controllers\\PasientController.cs",
+              "RelativeToolTip": "HospitalPlatformMVC\\Areas\\DoctorPanel\\Controllers\\PasientController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T09:35:10.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\Areas\\DoctorPanel\\Views\\Test\\Create.cshtml",
+              "RelativeDocumentMoniker": "HospitalPlatformMVC\\Areas\\DoctorPanel\\Views\\Test\\Create.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\Areas\\DoctorPanel\\Views\\Test\\Create.cshtml",
+              "RelativeToolTip": "HospitalPlatformMVC\\Areas\\DoctorPanel\\Views\\Test\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-08T09:34:08.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\Areas\\DoctorPanel\\Views\\Test\\Update.cshtml",
+              "RelativeDocumentMoniker": "HospitalPlatformMVC\\Areas\\DoctorPanel\\Views\\Test\\Update.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\Areas\\DoctorPanel\\Views\\Test\\Update.cshtml",
+              "RelativeToolTip": "HospitalPlatformMVC\\Areas\\DoctorPanel\\Views\\Test\\Update.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-08T09:33:38.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TestController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\Areas\\DoctorPanel\\Controllers\\TestController.cs",
+              "RelativeDocumentMoniker": "HospitalPlatformMVC\\Areas\\DoctorPanel\\Controllers\\TestController.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\Areas\\DoctorPanel\\Controllers\\TestController.cs",
+              "RelativeToolTip": "HospitalPlatformMVC\\Areas\\DoctorPanel\\Controllers\\TestController.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAACwAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T09:29:19.934Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

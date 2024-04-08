@@ -220,4 +220,7 @@ C:\Users\HP\Desktop\HospitalPlatformMVC\HospitalPlatformMVC\bin\Debug\net7.0\run
 C:\Users\HP\Desktop\HospitalPlatformMVC\HospitalPlatformMVC\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\HP\Desktop\HospitalPlatformMVC\HospitalPlatformMVC\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\HP\Desktop\HospitalPlatformMVC\HospitalPlatformMVC\obj\Debug\net7.0\HospitalPlatformMVC.csproj.AssemblyReference.cache
-C:\Users\HP\Desktop\HospitalPlatformMVC\HospitalPlatformMVC\obj\Debug\net7.0\HospitalPlatformMVC.csproj.CopyComplete
+C:\Users\HP\Desktop\HospitalPlatformMVC\HospitalPlatformMVC\obj\Debug\net7.0\HospitalPlatformMVC.sourcelink.json
+C:\Users\HP\Desktop\HospitalPlatformMVC\HospitalPlatformMVC\obj\Debug\net7.0\Hospital.A01767F1.Up2Date
+C:\Users\HP\Desktop\HospitalPlatformMVC\HospitalPlatformMVC\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\HP\Desktop\HospitalPlatformMVC\HospitalPlatformMVC\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
