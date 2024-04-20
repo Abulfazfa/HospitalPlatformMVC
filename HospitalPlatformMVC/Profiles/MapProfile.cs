@@ -8,8 +8,23 @@ namespace SoundSystemShop.Profiles
         public MapProfile()
         {
             CreateMap<User, RegisterDto>().ReverseMap();
+
         }
     }
 
+
+    class car
+    {
+        public int id { get; set; }
+        public string name { get; set; }
+        public string username { get; set; }
+    }
+
+	class masin
+	{
+		public int id { get; set; }
+		public string username { get; set; }
+	}
+
+
 }
- 

@@ -3,20 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|c:\\users\\hp\\desktop\\hospitalplatformmvc\\hospitalplatformmvc\\areas\\doctorpanel\\views\\test\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|solutionrelative:hospitalplatformmvc\\areas\\doctorpanel\\views\\test\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|c:\\users\\hp\\desktop\\hospitalplatformmvc\\hospitalplatformmvc\\views\\user\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|solutionrelative:hospitalplatformmvc\\views\\user\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|c:\\users\\hp\\desktop\\hospitalplatformmvc\\hospitalplatformmvc\\areas\\doctorpanel\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|solutionrelative:hospitalplatformmvc\\areas\\doctorpanel\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|c:\\users\\hp\\desktop\\hospitalplatformmvc\\hospitalplatformmvc\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|solutionrelative:hospitalplatformmvc\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|c:\\users\\hp\\desktop\\hospitalplatformmvc\\hospitalplatformmvc\\areas\\doctorpanel\\controllers\\pasientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|solutionrelative:hospitalplatformmvc\\areas\\doctorpanel\\controllers\\pasientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|c:\\users\\hp\\desktop\\hospitalplatformmvc\\hospitalplatformmvc\\areas\\doctorpanel\\views\\pasient\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|solutionrelative:hospitalplatformmvc\\areas\\doctorpanel\\views\\pasient\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|c:\\users\\hp\\desktop\\hospitalplatformmvc\\hospitalplatformmvc\\areas\\doctorpanel\\views\\test\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|solutionrelative:hospitalplatformmvc\\areas\\doctorpanel\\views\\test\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|c:\\users\\hp\\desktop\\hospitalplatformmvc\\hospitalplatformmvc\\models\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|solutionrelative:hospitalplatformmvc\\models\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|c:\\users\\hp\\desktop\\hospitalplatformmvc\\hospitalplatformmvc\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|solutionrelative:hospitalplatformmvc\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|c:\\users\\hp\\desktop\\hospitalplatformmvc\\hospitalplatformmvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|solutionrelative:hospitalplatformmvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|c:\\users\\hp\\desktop\\hospitalplatformmvc\\hospitalplatformmvc\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|solutionrelative:hospitalplatformmvc\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|c:\\users\\hp\\desktop\\hospitalplatformmvc\\hospitalplatformmvc\\controllers\\officecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|solutionrelative:hospitalplatformmvc\\controllers\\officecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|c:\\users\\hp\\desktop\\hospitalplatformmvc\\hospitalplatformmvc\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|solutionrelative:hospitalplatformmvc\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,6 +48,19 @@
           "DockedWidth": 200,
           "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\Models\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "HospitalPlatformMVC\\Models\\RegisterDto.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\Models\\RegisterDto.cs",
+              "RelativeToolTip": "HospitalPlatformMVC\\Models\\RegisterDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T07:30:34.215Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
@@ -43,53 +76,105 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "PasientController.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\Areas\\DoctorPanel\\Controllers\\PasientController.cs",
-              "RelativeDocumentMoniker": "HospitalPlatformMVC\\Areas\\DoctorPanel\\Controllers\\PasientController.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\Areas\\DoctorPanel\\Controllers\\PasientController.cs",
-              "RelativeToolTip": "HospitalPlatformMVC\\Areas\\DoctorPanel\\Controllers\\PasientController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T09:35:10.91Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\Areas\\DoctorPanel\\Views\\Test\\Create.cshtml",
-              "RelativeDocumentMoniker": "HospitalPlatformMVC\\Areas\\DoctorPanel\\Views\\Test\\Create.cshtml",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\Areas\\DoctorPanel\\Views\\Test\\Create.cshtml",
-              "RelativeToolTip": "HospitalPlatformMVC\\Areas\\DoctorPanel\\Views\\Test\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAGAAAA",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\Areas\\DoctorPanel\\Views\\Pasient\\Create.cshtml",
+              "RelativeDocumentMoniker": "HospitalPlatformMVC\\Areas\\DoctorPanel\\Views\\Pasient\\Create.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\Areas\\DoctorPanel\\Views\\Pasient\\Create.cshtml",
+              "RelativeToolTip": "HospitalPlatformMVC\\Areas\\DoctorPanel\\Views\\Pasient\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-08T09:34:08.416Z",
+              "WhenOpened": "2024-04-20T07:18:59.658Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Update.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\Areas\\DoctorPanel\\Views\\Test\\Update.cshtml",
-              "RelativeDocumentMoniker": "HospitalPlatformMVC\\Areas\\DoctorPanel\\Views\\Test\\Update.cshtml",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\Areas\\DoctorPanel\\Views\\Test\\Update.cshtml",
-              "RelativeToolTip": "HospitalPlatformMVC\\Areas\\DoctorPanel\\Views\\Test\\Update.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAAxAAAA",
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\Views\\User\\Register.cshtml",
+              "RelativeDocumentMoniker": "HospitalPlatformMVC\\Views\\User\\Register.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\Views\\User\\Register.cshtml",
+              "RelativeToolTip": "HospitalPlatformMVC\\Views\\User\\Register.cshtml",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAAAHIAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-08T09:33:38.327Z",
+              "WhenOpened": "2024-04-20T07:18:08.182Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TestController.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\Areas\\DoctorPanel\\Controllers\\TestController.cs",
-              "RelativeDocumentMoniker": "HospitalPlatformMVC\\Areas\\DoctorPanel\\Controllers\\TestController.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\Areas\\DoctorPanel\\Controllers\\TestController.cs",
-              "RelativeToolTip": "HospitalPlatformMVC\\Areas\\DoctorPanel\\Controllers\\TestController.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAAACwAAAAcAAAA",
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\Views\\User\\Login.cshtml",
+              "RelativeDocumentMoniker": "HospitalPlatformMVC\\Views\\User\\Login.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\Views\\User\\Login.cshtml",
+              "RelativeToolTip": "HospitalPlatformMVC\\Views\\User\\Login.cshtml",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAAFUAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-20T07:16:50.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "HospitalPlatformMVC\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\Controllers\\UserController.cs",
+              "RelativeToolTip": "HospitalPlatformMVC\\Controllers\\UserController.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAgwC8AAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T09:29:19.934Z",
+              "WhenOpened": "2024-04-20T07:16:45.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "HospitalPlatformMVC\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "HospitalPlatformMVC\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T07:15:34.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DoctorController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\Controllers\\DoctorController.cs",
+              "RelativeDocumentMoniker": "HospitalPlatformMVC\\Controllers\\DoctorController.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\Controllers\\DoctorController.cs",
+              "RelativeToolTip": "HospitalPlatformMVC\\Controllers\\DoctorController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T07:15:17.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OfficeController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\Controllers\\OfficeController.cs",
+              "RelativeDocumentMoniker": "HospitalPlatformMVC\\Controllers\\OfficeController.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\Controllers\\OfficeController.cs",
+              "RelativeToolTip": "HospitalPlatformMVC\\Controllers\\OfficeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T07:15:10.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ServiceController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\Controllers\\ServiceController.cs",
+              "RelativeDocumentMoniker": "HospitalPlatformMVC\\Controllers\\ServiceController.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\Controllers\\ServiceController.cs",
+              "RelativeToolTip": "HospitalPlatformMVC\\Controllers\\ServiceController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T07:15:07.021Z",
               "EditorCaption": ""
             }
           ]
