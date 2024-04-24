@@ -1,19 +1,22 @@
-﻿using HospitalPlatformMVC.Models;
+﻿using HospitalPlatformMVC.Helper;
+using HospitalPlatformMVC.Models;
 using HospitalPlatformMVC.Service.IService;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HospitalPlatformMVC.Controllers
 {
 	public class UserController : Controller
 	{
+		
 		private readonly IAccountService _accountService;
 
-		public UserController(IAccountService accountService)
-		{
-			_accountService = accountService;
-		}
+        public UserController(IAccountService accountService)
+        {
+            _accountService = accountService;
+        }
 
-		[HttpGet]
+        [HttpGet]
 		public IActionResult Login()
 		{
 			return View();
@@ -25,17 +28,17 @@ namespace HospitalPlatformMVC.Controllers
 			if (!ModelState.IsValid)
 			{
 				return View(loginDto);
-			}
+            }
 
-			var loginResult = _accountService.Login(loginDto).Result;
+            var result = _accountService.Login(loginDto).Result;
 
-			if (loginResult.IsSuccess)
+            if (result.IsSuccess)
 			{
 				return RedirectToAction(nameof(HomeController.Index), nameof(HomeController));
 			}
 			else
 			{
-				ModelState.AddModelError(string.Empty, "Invalid username or password.");
+				ModelState.AddModelError(string.Empty, result.Message);
 				return View(loginDto);
 			}
 
@@ -55,9 +58,9 @@ namespace HospitalPlatformMVC.Controllers
 				return View(registerDto);
 			}
 
-			var registrationResult = _accountService.Register(registerDto).Result;
+            var result = _accountService.Register(registerDto).Result;
 
-			if (registrationResult.IsSuccess)
+            if (result.IsSuccess)
 			{
 				return RedirectToAction(nameof(Login));
 			}

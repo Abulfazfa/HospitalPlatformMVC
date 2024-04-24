@@ -7,4 +7,11 @@
         UserLockedOut,
         InvalidCredentials
     }
+    public enum RoleEnum
+    {
+        Admin,
+        SubAdmin,
+        Expert,
+        User
+    }
 }
