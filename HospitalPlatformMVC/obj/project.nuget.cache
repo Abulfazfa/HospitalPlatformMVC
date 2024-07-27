@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "06K6Cq5aqUF6A1hgQbq+s0dUclNEa8O22VSKIAr1Jnn/TGe1A0vfH0GJAX9H5eGRMjdzffEeN8Wcg5XA4eqJGw==",
+  "dgSpecHash": "u9PkYL1d43A=",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\Desktop\\HospitalPlatformMVC\\HospitalPlatformMVC\\HospitalPlatformMVC.csproj",
+  "projectFilePath": "C:\\Users\\HP\\Desktop\\Programs\\HospitalPlatformMVC\\HospitalPlatformMVC\\HospitalPlatformMVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

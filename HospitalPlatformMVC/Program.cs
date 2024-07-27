@@ -18,6 +18,7 @@ builder.Services.AddScoped<ITokenProvider, TokenProvider>();
 builder.Services.AddScoped<IBaseService, BaseService>();
 builder.Services.AddScoped<IDoctorService, DoctorService >();
 builder.Services.AddScoped<IGroupService, GroupService>();
+builder.Services.AddScoped<IOfficeService, OfficeService>();
 builder.Services.AddScoped<IAppointmentService, AppointmentService>();
 builder.Services.AddScoped<IAccountService, AccountService>();
 builder.Services.AddScoped<ITestService, TestService>();

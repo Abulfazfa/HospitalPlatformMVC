@@ -5,6 +5,7 @@
         IDoctorService DoctorService { get; set; }
         ITestService TestService { get; set; }
         IGroupService GroupService { get; set; }
+        IOfficeService OfficeService { get; set; }
         IAccountService AccountService { get; set; }
         IUserService UserService { get; set; }
         

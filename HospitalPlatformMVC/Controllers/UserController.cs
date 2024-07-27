@@ -1,7 +1,5 @@
-﻿using HospitalPlatformMVC.Helper;
-using HospitalPlatformMVC.Models;
+﻿using HospitalPlatformMVC.Models;
 using HospitalPlatformMVC.Service.IService;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HospitalPlatformMVC.Controllers

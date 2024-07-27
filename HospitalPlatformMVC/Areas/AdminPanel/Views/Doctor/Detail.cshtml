@@ -4,9 +4,9 @@
         <div class="card">
             <div class="card-body">
 
-                    <div class="form-group">
+                    @* <div class="form-group">
                         <img src="~/assets/img/product/@Model.Image.ImgUrl" width="250" height="250" />
-                    </div>
+                    </div> *@
                 <div class="form-group">
                     <h2>@Model.FullName</h2>
                 </div>
@@ -26,7 +26,7 @@
                     <p>@Model.WorkingOfficeName</p>
                 </div>
 
-                <a class="btn btn-dark" asp-controller="product" asp-action="index">Back</a>
+                <a class="btn btn-dark" asp-controller="dashboard" asp-action="index">Back</a>
             </div>
         </div>
     </div>

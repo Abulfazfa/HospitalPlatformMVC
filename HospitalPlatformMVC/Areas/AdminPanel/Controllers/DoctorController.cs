@@ -2,6 +2,7 @@
 using HospitalPlatformMVC.Service;
 using HospitalPlatformMVC.Service.IService;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace HospitalPlatformMVC.Areas.AdminPanel.Controllers
 {
@@ -21,14 +22,26 @@ namespace HospitalPlatformMVC.Areas.AdminPanel.Controllers
         }
         public IActionResult Detail(int id)
         {
-            var product = _unitOfWork.DoctorService.GetAllAsync().Result;
+            var product = _unitOfWork.DoctorService.GetByIdAsync(id).Result;
             return View(product);
         }
         public async Task<IActionResult> DoctorCreate()
         {
-            ViewBag.Categories = _unitOfWork.GroupService.GetAllAsync().Result;
+            var groups = await _unitOfWork.GroupService.GetAllAsync();
+            ViewBag.Categories = groups.Select(g => new SelectListItem
+            {
+                Text = g.Name, 
+                Value = g.Name.ToString() 
+            }).ToList();
 
-			return View();
+            var offices = await _unitOfWork.OfficeService.GetAllAsync();
+            ViewBag.Offices = offices.Select(g => new SelectListItem
+            {
+                Text = g.Name,
+                Value = g.Name.ToString()
+            }).ToList();
+
+            return View();
         }
 
         [HttpPost]
