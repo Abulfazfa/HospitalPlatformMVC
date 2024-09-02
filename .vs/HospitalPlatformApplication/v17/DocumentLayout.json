@@ -3,32 +3,25 @@
   "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\Programs\\HospitalPlatformMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|c:\\users\\hp\\desktop\\programs\\hospitalplatformmvc\\hospitalplatformmvc\\areas\\adminpanel\\views\\doctor\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|solutionrelative:hospitalplatformmvc\\areas\\adminpanel\\views\\doctor\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{814576EB-95A1-4AE6-8F07-0159EC2C81AE}|..\\..\\..\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\HospitalPlatformAPI.csproj|c:\\users\\hp\\riderprojects\\hospitalplatformapi\\hospitalplatformapi\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|c:\\users\\hp\\desktop\\programs\\hospitalplatformmvc\\hospitalplatformmvc\\areas\\adminpanel\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|solutionrelative:hospitalplatformmvc\\areas\\adminpanel\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{814576EB-95A1-4AE6-8F07-0159EC2C81AE}|..\\..\\..\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\HospitalPlatformAPI.csproj|c:\\users\\hp\\riderprojects\\hospitalplatformapi\\hospitalplatformapi\\dtos\\account\\confirmaccountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|c:\\users\\hp\\desktop\\programs\\hospitalplatformmvc\\hospitalplatformmvc\\service\\doctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|solutionrelative:hospitalplatformmvc\\service\\doctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{814576EB-95A1-4AE6-8F07-0159EC2C81AE}|..\\..\\..\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\HospitalPlatformAPI.csproj|c:\\users\\hp\\riderprojects\\hospitalplatformapi\\hospitalplatformapi\\dtos\\account\\changepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|c:\\users\\hp\\desktop\\programs\\hospitalplatformmvc\\hospitalplatformmvc\\service\\genericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|solutionrelative:hospitalplatformmvc\\service\\genericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{814576EB-95A1-4AE6-8F07-0159EC2C81AE}|..\\..\\..\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\HospitalPlatformAPI.csproj|c:\\users\\hp\\riderprojects\\hospitalplatformapi\\hospitalplatformapi\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|c:\\users\\hp\\desktop\\programs\\hospitalplatformmvc\\hospitalplatformmvc\\service\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|solutionrelative:hospitalplatformmvc\\service\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{814576EB-95A1-4AE6-8F07-0159EC2C81AE}|..\\..\\..\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\HospitalPlatformAPI.csproj|c:\\users\\hp\\riderprojects\\hospitalplatformapi\\hospitalplatformapi\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|c:\\users\\hp\\desktop\\programs\\hospitalplatformmvc\\hospitalplatformmvc\\areas\\adminpanel\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|solutionrelative:hospitalplatformmvc\\areas\\adminpanel\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{814576EB-95A1-4AE6-8F07-0159EC2C81AE}|..\\..\\..\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\HospitalPlatformAPI.csproj|c:\\users\\hp\\riderprojects\\hospitalplatformapi\\hospitalplatformapi\\services\\interfaces\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|c:\\users\\hp\\desktop\\programs\\hospitalplatformmvc\\hospitalplatformmvc\\areas\\adminpanel\\views\\doctor\\doctorcreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{80C85AB3-AF60-4B84-981E-9A7F22921EC8}|HospitalPlatformMVC\\HospitalPlatformMVC.csproj|solutionrelative:hospitalplatformmvc\\areas\\adminpanel\\views\\doctor\\doctorcreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{814576EB-95A1-4AE6-8F07-0159EC2C81AE}|..\\..\\..\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\HospitalPlatformAPI.csproj|c:\\users\\hp\\riderprojects\\hospitalplatformapi\\hospitalplatformapi\\dtos\\account\\resetpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,8 +31,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 9,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\Models\\Doctor.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\Models\\Doctor.cs",
+              "ToolTip": "C:\\Users\\HP\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\Models\\Doctor.cs",
+              "RelativeToolTip": "..\\..\\..\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\Models\\Doctor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T19:19:25.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\Models\\AppUser.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\Models\\AppUser.cs",
+              "ToolTip": "C:\\Users\\HP\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\Models\\AppUser.cs",
+              "RelativeToolTip": "..\\..\\..\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\Models\\AppUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T19:18:06.798Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
@@ -54,88 +73,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GenericService.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Programs\\HospitalPlatformMVC\\HospitalPlatformMVC\\Service\\GenericService.cs",
-              "RelativeDocumentMoniker": "HospitalPlatformMVC\\Service\\GenericService.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\Programs\\HospitalPlatformMVC\\HospitalPlatformMVC\\Service\\GenericService.cs",
-              "RelativeToolTip": "HospitalPlatformMVC\\Service\\GenericService.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAD4vyYAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T18:00:13.518Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DoctorService.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Programs\\HospitalPlatformMVC\\HospitalPlatformMVC\\Service\\DoctorService.cs",
-              "RelativeDocumentMoniker": "HospitalPlatformMVC\\Service\\DoctorService.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\Programs\\HospitalPlatformMVC\\HospitalPlatformMVC\\Service\\DoctorService.cs",
-              "RelativeToolTip": "HospitalPlatformMVC\\Service\\DoctorService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA5AAAA",
+              "Title": "ChangePasswordDto.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\DTOs\\Account\\ChangePasswordDto.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\DTOs\\Account\\ChangePasswordDto.cs",
+              "ToolTip": "C:\\Users\\HP\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\DTOs\\Account\\ChangePasswordDto.cs",
+              "RelativeToolTip": "..\\..\\..\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\DTOs\\Account\\ChangePasswordDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAkAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T18:00:13.533Z"
+              "WhenOpened": "2024-09-02T19:10:19.929Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Detail.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Programs\\HospitalPlatformMVC\\HospitalPlatformMVC\\Areas\\AdminPanel\\Views\\Doctor\\Detail.cshtml",
-              "RelativeDocumentMoniker": "HospitalPlatformMVC\\Areas\\AdminPanel\\Views\\Doctor\\Detail.cshtml",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\Programs\\HospitalPlatformMVC\\HospitalPlatformMVC\\Areas\\AdminPanel\\Views\\Doctor\\Detail.cshtml",
-              "RelativeToolTip": "HospitalPlatformMVC\\Areas\\AdminPanel\\Views\\Doctor\\Detail.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-27T17:07:30.874Z",
+              "DocumentIndex": 1,
+              "Title": "ConfirmAccountDto.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\DTOs\\Account\\ConfirmAccountDto.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\DTOs\\Account\\ConfirmAccountDto.cs",
+              "ToolTip": "C:\\Users\\HP\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\DTOs\\Account\\ConfirmAccountDto.cs",
+              "RelativeToolTip": "..\\..\\..\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\DTOs\\Account\\ConfirmAccountDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T19:09:07.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ResetPasswordDto.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\DTOs\\Account\\ResetPasswordDto.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\DTOs\\Account\\ResetPasswordDto.cs",
+              "ToolTip": "C:\\Users\\HP\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\DTOs\\Account\\ResetPasswordDto.cs",
+              "RelativeToolTip": "..\\..\\..\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\DTOs\\Account\\ResetPasswordDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T19:08:39.835Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "GroupController.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Programs\\HospitalPlatformMVC\\HospitalPlatformMVC\\Areas\\AdminPanel\\Controllers\\GroupController.cs",
-              "RelativeDocumentMoniker": "HospitalPlatformMVC\\Areas\\AdminPanel\\Controllers\\GroupController.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\Programs\\HospitalPlatformMVC\\HospitalPlatformMVC\\Areas\\AdminPanel\\Controllers\\GroupController.cs",
-              "RelativeToolTip": "HospitalPlatformMVC\\Areas\\AdminPanel\\Controllers\\GroupController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "IAccountService.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\Services\\Interfaces\\IAccountService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\Services\\Interfaces\\IAccountService.cs",
+              "ToolTip": "C:\\Users\\HP\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\Services\\Interfaces\\IAccountService.cs",
+              "RelativeToolTip": "..\\..\\..\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\Services\\Interfaces\\IAccountService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T17:03:07.116Z"
+              "WhenOpened": "2024-09-02T19:03:13.669Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DoctorCreate.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Programs\\HospitalPlatformMVC\\HospitalPlatformMVC\\Areas\\AdminPanel\\Views\\Doctor\\DoctorCreate.cshtml",
-              "RelativeDocumentMoniker": "HospitalPlatformMVC\\Areas\\AdminPanel\\Views\\Doctor\\DoctorCreate.cshtml",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\Programs\\HospitalPlatformMVC\\HospitalPlatformMVC\\Areas\\AdminPanel\\Views\\Doctor\\DoctorCreate.cshtml",
-              "RelativeToolTip": "HospitalPlatformMVC\\Areas\\AdminPanel\\Views\\Doctor\\DoctorCreate.cshtml",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAADsAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-27T17:01:50.791Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Programs\\HospitalPlatformMVC\\HospitalPlatformMVC\\Service\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "HospitalPlatformMVC\\Service\\UnitOfWork.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\Programs\\HospitalPlatformMVC\\HospitalPlatformMVC\\Service\\UnitOfWork.cs",
-              "RelativeToolTip": "HospitalPlatformMVC\\Service\\UnitOfWork.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAuAAAA",
+              "DocumentIndex": 0,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\Services\\AccountService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\Services\\AccountService.cs",
+              "ToolTip": "C:\\Users\\HP\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\Services\\AccountService.cs",
+              "RelativeToolTip": "..\\..\\..\\RiderProjects\\HospitalPlatformAPI\\HospitalPlatformAPI\\Services\\AccountService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAMkAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T17:00:24.365Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DoctorController.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Programs\\HospitalPlatformMVC\\HospitalPlatformMVC\\Areas\\AdminPanel\\Controllers\\DoctorController.cs",
-              "RelativeDocumentMoniker": "HospitalPlatformMVC\\Areas\\AdminPanel\\Controllers\\DoctorController.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\Programs\\HospitalPlatformMVC\\HospitalPlatformMVC\\Areas\\AdminPanel\\Controllers\\DoctorController.cs",
-              "RelativeToolTip": "HospitalPlatformMVC\\Areas\\AdminPanel\\Controllers\\DoctorController.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAswBkAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T16:59:02.891Z"
+              "WhenOpened": "2024-09-02T19:02:28.56Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HospitalPlatformMVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+21d62cdfda8d5ffc839dd69dcd0177ca8982c905")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cceb523807c845af3d41c7d37f94446e21a169a8")]
 [assembly: System.Reflection.AssemblyProductAttribute("HospitalPlatformMVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HospitalPlatformMVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
